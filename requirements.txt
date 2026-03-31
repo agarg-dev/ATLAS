@@ -1,0 +1,13 @@
+torch
+transformers>=4.0.0
+numpy
+faiss-cpu
+scikit-learn
+pandas
+matplotlib
+seaborn
+gitpython
+wandb
+tqdm
+unidiff
+datasets
