@@ -61,8 +61,7 @@ C2C/
         ├── agents.py                    # agent architectures, reward calculator, trainer
         ├── train.py                     # training entry point
         ├── evaluate.py                  # evaluation (4 protocols)
-        ├── dataembedder.py              # CodeBERT embedder, function extraction
-        └── chart.py                     # visualization utility
+        └──  dataembedder.py              # CodeBERT embedder, function extraction
 ```
 
 ---
