@@ -365,6 +365,23 @@ The contrastive training script accepts `--wandb_project` (default: `c2c-codeber
 
 ---
 
+## Baselines
+
+The `src/baselines/` directory contains baseline implementations used for comparison against C2C.
+
+### LLMAO
+
+[LLMAO](https://github.com/squaresLab/LLMAO) is a line-level bug localization model that uses hidden states from a CodeGen language model, trained with a lightweight MLP. This repository includes the upstream LLMAO code extended with:
+
+- SWE-Bench Verified support (end-to-end preprocess → run → evaluate pipeline)
+- Batched FP16 GPU extraction as a faster alternative to the upstream loader
+- A CSV-based evaluation chain for any custom dataset
+- Dataset analysis utilities
+
+For full setup and usage instructions, see [`src/baselines/llmao/custom/README.md`](src/baselines/llmao/custom/README.md).
+
+---
+
 ## Reproducing Main Results
 
 To reproduce the primary TWF + intermediate results (Table 3 in the paper), run the full pipeline for each dataset at 3 seeds and average:
