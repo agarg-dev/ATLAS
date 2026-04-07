@@ -1,0 +1,667 @@
+[Step 1] Parsing SWE-bench Verified dataset...
+Loaded 500 instances from /C2C/data/swebench_verified.json.
+
+SWE-bench parse complete:
+  Instances processed:     500
+  Records produced:        1972
+  Unique instance IDs:     393
+  Skipped (test files):    0
+  Skipped (non-.py):       1
+  Skipped (pure deletion): 222
+  diff parser backend:     unidiff
+
+Saved to /C2C/data/swebench/bug_localization_dataset.json
+[Step 1] Done.
+[Step 2] Building triplet dataset (clones repos — may take a while)...
+Loading /C2C/data/swebench/bug_localization_dataset.json...
+Loaded 1972 records.
+Pre-git filter: 0 skipped, 1972 passing.
+  Cloning astropy from local cache...
+  Cloning django from local cache...
+  Cloning matplotlib from local cache...
+  Cloning seaborn from local cache...
+  Cloning requests from local cache...
+  Cloning xarray from local cache...
+  Cloning pylint from local cache...
+  Cloning pytest from local cache...
+  Cloning scikit-learn from local cache...
+  Cloning sphinx from local cache...
+  Cloning sympy from local cache...
+
+Total input:      1972
+Pre-git skipped:  0
+Post-git skipped: 0
+Triplets written: 1972
+Saved to /C2C/data/swebench/triplet_dataset.json
+
+Dataset Statistics (Table 2):
+  Unique issues:     393
+  Unique repos:      11
+  Total triplets:    1972
+  Unique buggy files:472
+  Unique negatives:  1818
+  Avg lines/issue:   5.0
+  Repos: ['astropy', 'django', 'matplotlib', 'pylint', 'pytest', 'requests', 'scikit-learn', 'seaborn', 'sphinx', 'sympy', 'xarray']
+Saved statistics to /C2C/data/swebench/dataset_statistics.json
+
+Issue-level stratified split (by repo):
+  Train: 314 issues, 1641 triplets  (1 from singleton repos, forced to train)
+  Val:   39 issues, 186 triplets
+  Test:  40 issues, 145 triplets
+[Step 2] Done.
+
+[Step 3] Training CodeBERT (initial)...
+Issue-level split: 1641 train triplets, 186 val triplets (excluded 145 test triplets)
+Scheduler: 270 total steps (27/epoch), warmup=27
+
+==== Epoch 1 ====
+Eval - PosSim: 0.9521, NegSim: 0.9294, Top-1: 0.0437, Top-3: 0.1125, Top-5: 0.1875, Loss: 3.0528
+Validation Loss: 3.0528 | Val Top-3 Acc: 0.1125 | [loss=3.0528]
+Saved best model (loss=3.0528).
+
+==== Epoch 2 ====
+Eval - PosSim: 0.7312, NegSim: 0.3170, Top-1: 0.1313, Top-3: 0.3563, Top-5: 0.5188, Loss: 1.1095
+Validation Loss: 1.1095 | Val Top-3 Acc: 0.3563 | [loss=1.1095]
+Saved best model (loss=1.1095).
+
+==== Epoch 3 ====
+Eval - PosSim: 0.6947, NegSim: 0.2108, Top-1: 0.1500, Top-3: 0.3750, Top-5: 0.5500, Loss: 0.9639
+Validation Loss: 0.9639 | Val Top-3 Acc: 0.3750 | [loss=0.9639]
+Saved best model (loss=0.9639).
+
+==== Epoch 4 ====
+Eval - PosSim: 0.6649, NegSim: 0.1586, Top-1: 0.1437, Top-3: 0.3812, Top-5: 0.5437, Loss: 0.9250
+Validation Loss: 0.9250 | Val Top-3 Acc: 0.3812 | [loss=0.9250]
+Saved best model (loss=0.9250).
+
+==== Epoch 5 ====
+Eval - PosSim: 0.6476, NegSim: 0.1334, Top-1: 0.1375, Top-3: 0.3688, Top-5: 0.5188, Loss: 0.8833
+Validation Loss: 0.8833 | Val Top-3 Acc: 0.3688 | [loss=0.8833]
+Saved best model (loss=0.8833).
+
+==== Epoch 6 ====
+Eval - PosSim: 0.6293, NegSim: 0.1131, Top-1: 0.1437, Top-3: 0.3750, Top-5: 0.5188, Loss: 0.9090
+Validation Loss: 0.9090 | Val Top-3 Acc: 0.3750 | [loss=0.9090]
+
+==== Epoch 7 ====
+Eval - PosSim: 0.6080, NegSim: 0.1285, Top-1: 0.1500, Top-3: 0.3688, Top-5: 0.5125, Loss: 0.9271
+Validation Loss: 0.9271 | Val Top-3 Acc: 0.3688 | [loss=0.9271]
+
+==== Epoch 8 ====
+Eval - PosSim: 0.6286, NegSim: 0.0965, Top-1: 0.1375, Top-3: 0.3625, Top-5: 0.5250, Loss: 0.8521
+Validation Loss: 0.8521 | Val Top-3 Acc: 0.3625 | [loss=0.8521]
+Saved best model (loss=0.8521).
+
+==== Epoch 9 ====
+Eval - PosSim: 0.6170, NegSim: 0.1084, Top-1: 0.1375, Top-3: 0.3625, Top-5: 0.5188, Loss: 0.9009
+Validation Loss: 0.9009 | Val Top-3 Acc: 0.3625 | [loss=0.9009]
+
+==== Epoch 10 ====
+Eval - PosSim: 0.6153, NegSim: 0.1007, Top-1: 0.1375, Top-3: 0.3563, Top-5: 0.5188, Loss: 0.8995
+Validation Loss: 0.8995 | Val Top-3 Acc: 0.3563 | [loss=0.8995]
+
+[Step 3] Done.
+[Step 4] Building per-repo FAISS index (initial model)...
+Loading triplets from: /C2C/data/swebench/triplet_dataset.json
+Loaded 1972 triplets
+Using CodeBERT on device: cuda
+Found 11 repos: ['astropy', 'django', 'matplotlib', 'pylint', 'pytest', 'requests', 'scikit-learn', 'seaborn', 'sphinx', 'sympy', 'xarray']
+
+Processing astropy (SHA: b750a0e)...
+  Embedding 786 repo files for astropy...
+  astropy: 732 vectors (786 repo files, 21 positive mappings, 17 replaced, 0 renamed, 732 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/astropy
+
+Processing django (SHA: f8fab6f)...
+  Embedding 2354 repo files for django...
+  django: 1944 vectors (2354 repo files, 203 positive mappings, 98 replaced, 0 renamed, 1944 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/django
+
+Processing matplotlib (SHA: 3dd06a4)...
+  Embedding 895 repo files for matplotlib...
+  matplotlib: 893 vectors (895 repo files, 28 positive mappings, 22 replaced, 0 renamed, 893 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/matplotlib
+
+Processing pylint (SHA: 1f8c4d9)...
+  Embedding 2186 repo files for pylint...
+  pylint: 2044 vectors (2186 repo files, 10 positive mappings, 8 replaced, 0 renamed, 2044 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/pylint
+
+Processing pytest (SHA: 6e7dc8b)...
+  Embedding 235 repo files for pytest...
+  pytest: 228 vectors (235 repo files, 17 positive mappings, 12 replaced, 0 renamed, 228 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/pytest
+
+Processing requests (SHA: 39d0fdd)...
+  Embedding 35 repo files for requests...
+  requests: 37 vectors (35 repo files, 6 positive mappings, 3 replaced, 0 renamed, 37 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/requests
+
+Processing scikit-learn (SHA: 3eacf94)...
+  Embedding 739 repo files for scikit-learn...
+  scikit-learn: 716 vectors (739 repo files, 23 positive mappings, 15 replaced, 0 renamed, 716 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/scikit-learn
+
+Processing seaborn (SHA: 54cab15)...
+  Embedding 150 repo files for seaborn...
+  seaborn: 142 vectors (150 repo files, 1 positive mappings, 0 replaced, 0 renamed, 142 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/seaborn
+
+Processing sphinx (SHA: 81a4fd9)...
+  Embedding 548 repo files for sphinx...
+  sphinx: 507 vectors (548 repo files, 49 positive mappings, 26 replaced, 0 renamed, 507 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/sphinx
+
+Processing sympy (SHA: b1cb676)...
+  Embedding 1505 repo files for sympy...
+  sympy: 1440 vectors (1505 repo files, 90 positive mappings, 77 replaced, 1 renamed, 1440 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/sympy
+
+Processing xarray (SHA: 41fef6f)...
+  Embedding 174 repo files for xarray...
+  xarray: 180 vectors (174 repo files, 24 positive mappings, 12 replaced, 0 renamed, 180 unique contents)
+  Saved to /C2C/data/swebench/faiss_index_codebert/xarray
+
+Indexing complete. Total vectors across all repos: 8863
+Output saved to: /C2C/data/swebench/faiss_index_codebert
+[Step 4] Done.
+[Step 5] Mining hard negatives...
+Loading triplets from /C2C/data/swebench/triplet_dataset.json
+Loaded 1972 triplets
+Loading per-repo FAISS indices from /C2C/data/swebench/faiss_index_codebert
+  Loaded astropy: 732 vectors
+  Loaded django: 1944 vectors
+  Loaded matplotlib: 893 vectors
+  Loaded pylint: 2044 vectors
+  Loaded pytest: 228 vectors
+  Loaded requests: 37 vectors
+  Loaded scikit-learn: 716 vectors
+  Loaded seaborn: 142 vectors
+  Loaded sphinx: 507 vectors
+  Loaded sympy: 1440 vectors
+  Loaded xarray: 180 vectors
+Loaded indices for 11 repos
+Starting hard negative mining...
+Skipped 0 triplets (repo not in index), 47 triplets (no valid hard negative found)
+Mined 1925 hard triplets. Saving to: /C2C/data/swebench/triplet_dataset_hardneg.json
+Done.
+[Step 5] Done.
+[Step 6] Retraining CodeBERT on hard negatives (warm-start from initial)...
+Issue-level split: 1594 train triplets, 186 val triplets (excluded 145 test triplets)
+Loading weights from: /C2C/outputs/checkpoints/contrastive/swebench/best_codebert_triplet.pt
+Scheduler: 390 total steps (26/epoch), warmup=0
+
+==== Epoch 1 ====
+Eval - PosSim: 0.6199, NegSim: 0.6715, Top-1: 0.1023, Top-3: 0.2727, Top-5: 0.4091, Loss: 0.9358
+Validation Loss: 0.9358 | Val Top-3 Acc: 0.2727 | [loss=0.9358]
+Saved best model (loss=0.9358).
+
+==== Epoch 2 ====
+Eval - PosSim: 0.5850, NegSim: 0.6292, Top-1: 0.1136, Top-3: 0.3011, Top-5: 0.4489, Loss: 0.9413
+Validation Loss: 0.9413 | Val Top-3 Acc: 0.3011 | [loss=0.9413]
+
+==== Epoch 3 ====
+Eval - PosSim: 0.5894, NegSim: 0.6183, Top-1: 0.1136, Top-3: 0.2670, Top-5: 0.4034, Loss: 0.8736
+Validation Loss: 0.8736 | Val Top-3 Acc: 0.2670 | [loss=0.8736]
+Saved best model (loss=0.8736).
+
+==== Epoch 4 ====
+Eval - PosSim: 0.5677, NegSim: 0.6208, Top-1: 0.1136, Top-3: 0.2670, Top-5: 0.4034, Loss: 0.9068
+Validation Loss: 0.9068 | Val Top-3 Acc: 0.2670 | [loss=0.9068]
+
+==== Epoch 5 ====
+Eval - PosSim: 0.5666, NegSim: 0.6063, Top-1: 0.1193, Top-3: 0.2727, Top-5: 0.4034, Loss: 0.9324
+Validation Loss: 0.9324 | Val Top-3 Acc: 0.2727 | [loss=0.9324]
+
+==== Epoch 6 ====
+Eval - PosSim: 0.5520, NegSim: 0.5791, Top-1: 0.1136, Top-3: 0.2727, Top-5: 0.4034, Loss: 0.8838
+Validation Loss: 0.8838 | Val Top-3 Acc: 0.2727 | [loss=0.8838]
+
+==== Epoch 7 ====
+Eval - PosSim: 0.5449, NegSim: 0.5919, Top-1: 0.1193, Top-3: 0.2784, Top-5: 0.4034, Loss: 0.9087
+Validation Loss: 0.9087 | Val Top-3 Acc: 0.2784 | [loss=0.9087]
+
+==== Epoch 8 ====
+Eval - PosSim: 0.5436, NegSim: 0.5890, Top-1: 0.1193, Top-3: 0.2898, Top-5: 0.4091, Loss: 0.9247
+Validation Loss: 0.9247 | Val Top-3 Acc: 0.2898 | [loss=0.9247]
+Early stopping triggered.
+
+[Step 6] Done.
+[Step 7] Rebuilding per-repo FAISS index (hard-neg model, reusing cached contents)...
+Loading triplets from: /C2C/data/swebench/triplet_dataset_hardneg.json
+Loaded 1925 triplets
+Using CodeBERT on device: cuda
+Reusing file contents from: /C2C/data/swebench/faiss_index_codebert
+Found 11 repos in triplets: ['astropy', 'django', 'matplotlib', 'pylint', 'pytest', 'requests', 'scikit-learn', 'seaborn', 'sphinx', 'sympy', 'xarray']
+
+Processing astropy (from cache)...
+  Re-embedding 732 cached files for astropy...
+  astropy: 732 vectors (from cache, 21 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/astropy
+
+Processing django (from cache)...
+  Re-embedding 1944 cached files for django...
+  django: 1944 vectors (from cache, 197 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/django
+
+Processing matplotlib (from cache)...
+  Re-embedding 893 cached files for matplotlib...
+  matplotlib: 893 vectors (from cache, 28 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/matplotlib
+
+Processing pylint (from cache)...
+  Re-embedding 2044 cached files for pylint...
+  pylint: 2044 vectors (from cache, 10 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/pylint
+
+Processing pytest (from cache)...
+  Re-embedding 228 cached files for pytest...
+  pytest: 228 vectors (from cache, 17 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/pytest
+
+Processing requests (from cache)...
+  Re-embedding 37 cached files for requests...
+  requests: 37 vectors (from cache, 6 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/requests
+
+Processing scikit-learn (from cache)...
+  Re-embedding 716 cached files for scikit-learn...
+  scikit-learn: 716 vectors (from cache, 23 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/scikit-learn
+
+Processing seaborn (from cache)...
+  Re-embedding 142 cached files for seaborn...
+  seaborn: 142 vectors (from cache, 1 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/seaborn
+
+Processing sphinx (from cache)...
+  Re-embedding 507 cached files for sphinx...
+  sphinx: 507 vectors (from cache, 49 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/sphinx
+
+Processing sympy (from cache)...
+  Re-embedding 1440 cached files for sympy...
+  sympy: 1440 vectors (from cache, 90 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/sympy
+
+Processing xarray (from cache)...
+  Re-embedding 180 cached files for xarray...
+  xarray: 180 vectors (from cache, 24 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_hardneg/xarray
+
+Indexing complete. Total vectors across all repos: 8863
+Output saved to: /C2C/data/swebench/faiss_index_codebert_hardneg
+[Step 7] Done.
+[Step 8] Building hierarchical retrieval dataset...
+Loading triplets from /C2C/data/swebench/triplet_dataset_hardneg.json
+Loaded 1925 triplets
+Using CodeBERT on device: cuda
+Loading per-repo FAISS indices from /C2C/data/swebench/faiss_index_codebert_hardneg
+  Loaded astropy: 732 vectors, 21 positive mappings
+  Loaded django: 1944 vectors, 197 positive mappings
+  Loaded matplotlib: 893 vectors, 28 positive mappings
+  Loaded pylint: 2044 vectors, 10 positive mappings
+  Loaded pytest: 228 vectors, 17 positive mappings
+  Loaded requests: 37 vectors, 6 positive mappings
+  Loaded scikit-learn: 716 vectors, 23 positive mappings
+  Loaded seaborn: 142 vectors, 1 positive mappings
+  Loaded sphinx: 507 vectors, 49 positive mappings
+  Loaded sympy: 1440 vectors, 90 positive mappings
+  Loaded xarray: 180 vectors, 24 positive mappings
+Loaded indices for 11 repos
+
+Issue-level split (no data leakage):
+  Unique issues: 388 total → 309 train / 39 val / 40 test
+  Train:  309 issues,  1594 triplets,  11 repos
+  Val  :   39 issues,   186 triplets,   8 repos
+  Test :   40 issues,   145 triplets,   9 repos
+  Deduplicated train: 1594 → 372 triplets (aggregated buggy lines/functions)
+
+  Retrieval Hit@K for train (n=372):
+    Hit@3  : 349/372 = 93.82%
+    Hit@5  : 365/372 = 98.12%
+    Hit@10 : 372/372 = 100.00%
+    Hit@20 : 372/372 = 100.00%
+    Hit@50 : 372/372 = 100.00%
+
+  Top-10 retrieval hit rate for train: 372/372 = 100.00%
+  Fallback insertions (correct not retrieved): 17/372 = 4.57%
+  Saved train dataset with 372 entries
+  train filter -> kept 372 / 372  (removed 0) -> /C2C/data/swebench/hierarchical_dataset/train_filtered.json
+  Deduplicated val: 186 → 48 triplets (aggregated buggy lines/functions)
+
+  Retrieval Hit@K for val (n=48):
+    Hit@3  : 23/48 = 47.92%
+    Hit@5  : 31/48 = 64.58%
+    Hit@10 : 34/48 = 70.83%
+    Hit@20 : 34/48 = 70.83%
+    Hit@50 : 34/48 = 70.83%
+
+  Top-10 retrieval hit rate for val: 34/48 = 70.83%
+  Fallback insertions (correct not retrieved): 20/48 = 41.67%
+  Saved val dataset with 48 entries
+  val filter -> kept 48 / 48  (removed 0) -> /C2C/data/swebench/hierarchical_dataset/val_filtered.json
+  Deduplicated test: 145 → 46 triplets (aggregated buggy lines/functions)
+
+  Retrieval Hit@K for test (n=46):
+    Hit@3  : 17/46 = 36.96%
+    Hit@5  : 22/46 = 47.83%
+    Hit@10 : 30/46 = 65.22%
+    Hit@20 : 30/46 = 65.22%
+    Hit@50 : 30/46 = 65.22%
+
+  Top-10 retrieval hit rate for test: 30/46 = 65.22%
+  Fallback insertions (correct not retrieved): 18/46 = 39.13%
+  Saved test dataset with 46 entries
+  test filter -> kept 46 / 46  (removed 0) -> /C2C/data/swebench/hierarchical_dataset/test_filtered.json
+
+Split statistics saved to /C2C/data/swebench/hierarchical_dataset/split_statistics.json
+[Step 8] Done.
+[Step 9] Evaluating retrieval performance...
+
+--- Building base CodeBERT FAISS index ---
+Loading triplets from: /C2C/data/swebench/triplet_dataset.json
+Loaded 1972 triplets
+Using base CodeBERT (no fine-tuning)
+Using CodeBERT on device: cuda
+Reusing file contents from: /C2C/data/swebench/faiss_index_codebert
+Found 11 repos in triplets: ['astropy', 'django', 'matplotlib', 'pylint', 'pytest', 'requests', 'scikit-learn', 'seaborn', 'sphinx', 'sympy', 'xarray']
+
+Processing astropy (from cache)...
+  Re-embedding 732 cached files for astropy...
+  astropy: 732 vectors (from cache, 21 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/astropy
+
+Processing django (from cache)...
+  Re-embedding 1944 cached files for django...
+  django: 1944 vectors (from cache, 203 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/django
+
+Processing matplotlib (from cache)...
+  Re-embedding 893 cached files for matplotlib...
+  matplotlib: 893 vectors (from cache, 28 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/matplotlib
+
+Processing pylint (from cache)...
+  Re-embedding 2044 cached files for pylint...
+  pylint: 2044 vectors (from cache, 10 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/pylint
+
+Processing pytest (from cache)...
+  Re-embedding 228 cached files for pytest...
+  pytest: 228 vectors (from cache, 17 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/pytest
+
+Processing requests (from cache)...
+  Re-embedding 37 cached files for requests...
+  requests: 37 vectors (from cache, 6 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/requests
+
+Processing scikit-learn (from cache)...
+  Re-embedding 716 cached files for scikit-learn...
+  scikit-learn: 716 vectors (from cache, 23 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/scikit-learn
+
+Processing seaborn (from cache)...
+  Re-embedding 142 cached files for seaborn...
+  seaborn: 142 vectors (from cache, 1 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/seaborn
+
+Processing sphinx (from cache)...
+  Re-embedding 507 cached files for sphinx...
+  sphinx: 507 vectors (from cache, 49 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/sphinx
+
+Processing sympy (from cache)...
+  Re-embedding 1440 cached files for sympy...
+  sympy: 1440 vectors (from cache, 90 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/sympy
+
+Processing xarray (from cache)...
+  Re-embedding 180 cached files for xarray...
+  xarray: 180 vectors (from cache, 24 positive mappings, 0 replaced)
+  Saved to /C2C/data/swebench/faiss_index_codebert_base/xarray
+
+Indexing complete. Total vectors across all repos: 8863
+Output saved to: /C2C/data/swebench/faiss_index_codebert_base
+
+=== Base CodeBERT (no fine-tuning) ===
+Loading triplets from /C2C/data/swebench/triplet_dataset.json
+Loaded 1972 triplets
+Filtered to 145 test-only triplets (from 1972)
+Loading per-repo indices from /C2C/data/swebench/faiss_index_codebert_base
+Loaded 11 repo indices
+Using base CodeBERT (no fine-tuning)
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 145 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.0000      0.0000      0.0000
+    5      0.0000      0.0000      0.0000
+   10      0.0000      0.0000      0.0000
+   20      0.0000      0.0000      0.0000
+   50      0.0069      0.0250      0.0003
+
+MRR@50 (issue-level): 0.0003
+Not found in top-50: 144/145 (99.31%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:    0
+        rank 1:    0
+        rank 2:    0
+      rank 3-4:    0
+      rank 5-9:    0
+    rank 10-19:    0
+    rank 20-49:    1
+
+Results saved to /C2C/data/swebench/faiss_index_codebert_base/eval_retrieval_results_test.json
+
+=== Initial model (random negatives) ===
+--- test split ---
+Loading triplets from /C2C/data/swebench/triplet_dataset.json
+Loaded 1972 triplets
+Filtered to 145 test-only triplets (from 1972)
+Loading per-repo indices from /C2C/data/swebench/faiss_index_codebert
+Loaded 11 repo indices
+Loading fine-tuned weights from: /C2C/outputs/checkpoints/contrastive/swebench/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 145 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.5241      0.3500      0.4161
+    5      0.5724      0.4500      0.4275
+   10      0.6207      0.5500      0.4339
+   20      0.8000      0.6750      0.4463
+   50      0.9103      0.7750      0.4502
+
+MRR@50 (issue-level): 0.4502
+Not found in top-50: 13/145 (8.97%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:   47  ############
+        rank 1:   22  ######
+        rank 2:    7  #
+      rank 3-4:    7  #
+      rank 5-9:    7  #
+    rank 10-19:   26  #######
+    rank 20-49:   16  ####
+
+Results saved to /C2C/data/swebench/faiss_index_codebert/eval_retrieval_results_test.json
+--- val split ---
+Loading triplets from /C2C/data/swebench/triplet_dataset.json
+Loaded 1972 triplets
+Filtered to 186 val-only triplets (from 1972)
+Loading per-repo indices from /C2C/data/swebench/faiss_index_codebert
+Loaded 11 repo indices
+Loading fine-tuned weights from: /C2C/outputs/checkpoints/contrastive/swebench/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 186 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.2742      0.2564      0.2034
+    5      0.4570      0.4103      0.2478
+   10      0.6667      0.5385      0.2764
+   20      0.7527      0.6667      0.2831
+   50      0.8871      0.7949      0.2868
+
+MRR@50 (issue-level): 0.2868
+Not found in top-50: 21/186 (11.29%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:   26  #####
+        rank 1:   21  ####
+        rank 2:    4
+      rank 3-4:   34  #######
+      rank 5-9:   39  ########
+    rank 10-19:   16  ###
+    rank 20-49:   25  #####
+
+Results saved to /C2C/data/swebench/faiss_index_codebert/eval_retrieval_results_val.json
+--- train split ---
+Loading triplets from /C2C/data/swebench/triplet_dataset.json
+Loaded 1972 triplets
+Filtered to 1641 train-only triplets (from 1972)
+Loading per-repo indices from /C2C/data/swebench/faiss_index_codebert
+Loaded 11 repo indices
+Loading fine-tuned weights from: /C2C/outputs/checkpoints/contrastive/swebench/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 1641 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.9226      0.8344      0.8115
+    5      0.9628      0.9140      0.8205
+   10      0.9939      0.9713      0.8245
+   20      0.9963      0.9841      0.8247
+   50      1.0000      1.0000      0.8249
+
+MRR@50 (issue-level): 0.8249
+Not found in top-50: 0/1641 (0.00%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0: 1175  ############################
+        rank 1:  262  ######
+        rank 2:   77  #
+      rank 3-4:   66  #
+      rank 5-9:   51  #
+    rank 10-19:    4
+    rank 20-49:    6
+
+Results saved to /C2C/data/swebench/faiss_index_codebert/eval_retrieval_results_train.json
+
+=== Hard-negative model ===
+--- test split ---
+Loading triplets from /C2C/data/swebench/triplet_dataset_hardneg.json
+Loaded 1925 triplets
+Filtered to 145 test-only triplets (from 1925)
+Loading per-repo indices from /C2C/data/swebench/faiss_index_codebert_hardneg
+Loaded 11 repo indices
+Loading fine-tuned weights from: /C2C/outputs/checkpoints/contrastive/swebench/hardneg/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 145 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.5034      0.3500      0.3977
+    5      0.6000      0.4750      0.4187
+   10      0.6966      0.6500      0.4314
+   20      0.8759      0.7750      0.4431
+   50      0.9379      0.8500      0.4456
+
+MRR@50 (issue-level): 0.4456
+Not found in top-50: 9/145 (6.21%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:   43  ###########
+        rank 1:   28  #######
+        rank 2:    2
+      rank 3-4:   14  ###
+      rank 5-9:   14  ###
+    rank 10-19:   26  #######
+    rank 20-49:    9  ##
+
+Results saved to /C2C/data/swebench/faiss_index_codebert_hardneg/eval_retrieval_results_test.json
+--- val split ---
+Loading triplets from /C2C/data/swebench/triplet_dataset_hardneg.json
+Loaded 1925 triplets
+Filtered to 186 val-only triplets (from 1925)
+Loading per-repo indices from /C2C/data/swebench/faiss_index_codebert_hardneg
+Loaded 11 repo indices
+Loading fine-tuned weights from: /C2C/outputs/checkpoints/contrastive/swebench/hardneg/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 186 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.3602      0.4103      0.2760
+    5      0.7366      0.6154      0.3612
+   10      0.8172      0.6923      0.3729
+   20      0.8441      0.7436      0.3743
+   50      0.9194      0.8205      0.3770
+
+MRR@50 (issue-level): 0.3770
+Not found in top-50: 15/186 (8.06%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:   42  #########
+        rank 1:    6  #
+        rank 2:   19  ####
+      rank 3-4:   70  ###############
+      rank 5-9:   15  ###
+    rank 10-19:    5  #
+    rank 20-49:   14  ###
+
+Results saved to /C2C/data/swebench/faiss_index_codebert_hardneg/eval_retrieval_results_val.json
+--- train split ---
+Loading triplets from /C2C/data/swebench/triplet_dataset_hardneg.json
+Loaded 1925 triplets
+Filtered to 1594 train-only triplets (from 1925)
+Loading per-repo indices from /C2C/data/swebench/faiss_index_codebert_hardneg
+Loaded 11 repo indices
+Loading fine-tuned weights from: /C2C/outputs/checkpoints/contrastive/swebench/hardneg/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 1594 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.9674      0.9288      0.8582
+    5      0.9881      0.9806      0.8628
+   10      1.0000      1.0000      0.8643
+   20      1.0000      1.0000      0.8643
+   50      1.0000      1.0000      0.8643
+
+MRR@50 (issue-level): 0.8643
+Not found in top-50: 0/1594 (0.00%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0: 1215  ##############################
+        rank 1:  264  ######
+        rank 2:   63  #
+      rank 3-4:   33
+      rank 5-9:   19
+    rank 10-19:    0
+    rank 20-49:    0
+
+Results saved to /C2C/data/swebench/faiss_index_codebert_hardneg/eval_retrieval_results_train.json
+[Step 9] Done.
+==========================================
+SWE-bench preprocessing pipeline complete.
+Finished: Tue Mar 24 11:44:30 EDT 2026
+==========================================

@@ -1,0 +1,780 @@
+
+Random seed fixed to 42 for reproducibility
+Using device: cuda
+Training strategy: vt
+Training samples: 544
+Val samples: 76
+Initialized RankingBasedHRLTrainer with 544 training samples
+Reward type: intermediate, Training strategy: vt
+Using Vanilla Training Strategy (VT)
+Starting Ranking-based HRL Training with Batching...
+Epoch 1, Batch 10/17, Avg Loss: 6.5038, Avg Reward: 0.7539
+Agents saved: tag=best_oracle_func, agents=all
+Agents saved: tag=best_oracle_line, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.06, 'file_accuracy_top_5': 0.42, 'file_mrr': 0.19700000000000006, 'func_accuracy_top_1': 0.0, 'func_accuracy_top_5': 0.06, 'func_accuracy_top_10': 0.06, 'func_accuracy_top_15': 0.06, 'func_mrr': 0.4444444444444444, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.42, 'issue_func_coverage': 0.06, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.19736842105263158, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.4077875706165179, 'oracle_line_top1': 0.21153846153846154, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.34445853292007134, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.16363636363636364, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.06, 'file_accuracy_top_5': 0.42, 'file_mrr': 0.19700000000000006, 'func_accuracy_top_1': 0.0, 'func_accuracy_top_5': 0.06, 'func_accuracy_top_10': 0.06, 'func_accuracy_top_15': 0.06, 'func_mrr': 0.4444444444444444, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.42, 'issue_func_coverage': 0.06, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.19736842105263158, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.4077875706165179, 'oracle_line_top1': 0.21153846153846154, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.34445853292007134, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.16363636363636364, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Epoch 1: Loss = 6.3508, Reward = 0.7487, Epsilon = 0.2755, Temperature = 1.0000
+  Epoch wall time: 197s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=all
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.09210526315789473, 'file_accuracy_top_5': 0.5131578947368421, 'file_mrr': 0.2274122807017544, 'func_accuracy_top_1': 0.0, 'func_accuracy_top_5': 0.07894736842105263, 'func_accuracy_top_10': 0.09210526315789473, 'func_accuracy_top_15': 0.09210526315789473, 'func_mrr': 0.3595238095238095, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5131578947368421, 'issue_func_coverage': 0.07894736842105263, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.19736842105263158, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.41102515905147474, 'oracle_line_top1': 0.21153846153846154, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3424450549450549, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 2, Batch 10/17, Avg Loss: 7.6886, Avg Reward: 0.9271
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.6, 'file_mrr': 0.2726666666666666, 'func_accuracy_top_1': 0.06, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.6722222222222222, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.02, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.08333333333333333, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.6, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.2236842105263158, 'oracle_func_top5': 0.6710526315789473, 'oracle_func_mrr': 0.41867737525632254, 'oracle_line_top1': 0.19230769230769232, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.333667934629473, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6363636363636364, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.6, 'file_mrr': 0.2726666666666666, 'func_accuracy_top_1': 0.06, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.6722222222222222, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.02, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.08333333333333333, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.6, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.2236842105263158, 'oracle_func_top5': 0.6710526315789473, 'oracle_func_mrr': 0.41867737525632254, 'oracle_line_top1': 0.19230769230769232, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.333667934629473, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6363636363636364, 'oracle_func_n_nonglobal': 55}
+Epoch 2: Loss = 8.5201, Reward = 1.0114, Epsilon = 0.2530, Temperature = 1.0000
+  Epoch wall time: 198s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5263157894736842, 'file_mrr': 0.25504385964912274, 'func_accuracy_top_1': 0.039473684210526314, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5333333333333333, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5263157894736842, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.2236842105263158, 'oracle_func_top5': 0.6710526315789473, 'oracle_func_mrr': 0.4184533302954355, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30674485770639615, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6363636363636364, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 3, Batch 10/17, Avg Loss: 11.7515, Avg Reward: 1.3766
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.6, 'file_mrr': 0.27533333333333326, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7777777777777778, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.6, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3026315789473684, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.46824761495814116, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3117345261576031, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2545454545454545, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.6, 'file_mrr': 0.27533333333333326, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7777777777777778, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.6, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3026315789473684, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.46824761495814116, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3117345261576031, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2545454545454545, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Epoch 3: Loss = 12.4056, Reward = 1.4361, Epsilon = 0.2323, Temperature = 1.0000
+  Epoch wall time: 204s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=all
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.4868421052631579, 'file_mrr': 0.24298245614035086, 'func_accuracy_top_1': 0.06578947368421052, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6904761904761905, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.4868421052631579, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.32894736842105265, 'oracle_func_top5': 0.6578947368421053, 'oracle_func_mrr': 0.4868156697104065, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3104994364609749, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2727272727272727, 'oracle_func_top5_nonglobal': 0.5636363636363636, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 4, Batch 10/17, Avg Loss: 13.7029, Avg Reward: 1.6020
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.56, 'file_mrr': 0.2673333333333333, 'func_accuracy_top_1': 0.06, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.75, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.56, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3157894736842105, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.4820968140047087, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.31191308691308695, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2727272727272727, 'oracle_func_top5_nonglobal': 0.6363636363636364, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.56, 'file_mrr': 0.2673333333333333, 'func_accuracy_top_1': 0.06, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.75, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.56, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3157894736842105, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.4820968140047087, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.31191308691308695, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2727272727272727, 'oracle_func_top5_nonglobal': 0.6363636363636364, 'oracle_func_n_nonglobal': 55}
+Epoch 4: Loss = 13.9656, Reward = 1.6220, Epsilon = 0.2133, Temperature = 1.0000
+  Epoch wall time: 205s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5131578947368421, 'file_mrr': 0.24824561403508769, 'func_accuracy_top_1': 0.06578947368421052, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6833333333333333, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5131578947368421, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3026315789473684, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.47517245181718853, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3081497028612412, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2909090909090909, 'oracle_func_top5_nonglobal': 0.6363636363636364, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 5, Batch 10/17, Avg Loss: 14.8467, Avg Reward: 1.7620
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.8333333333333334, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.02, 'line_accuracy_top_10': 0.02, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.16666666666666666, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.02, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.02, 'total_samples': 50, 'oracle_func_top1': 0.32894736842105265, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.4943433028959345, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3008325008325008, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.8333333333333334, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.02, 'line_accuracy_top_10': 0.02, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.16666666666666666, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.02, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.02, 'total_samples': 50, 'oracle_func_top1': 0.32894736842105265, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.4943433028959345, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3008325008325008, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 5: Loss = 13.1095, Reward = 1.6290, Epsilon = 0.1959, Temperature = 1.0000
+  Epoch wall time: 207s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7326923076923076, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.16666666666666666, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.32894736842105265, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.488959249814513, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3006868131868132, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 6, Batch 10/17, Avg Loss: 12.1476, Avg Reward: 1.5976
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.1, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.9166666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.02, 'line_accuracy_top_10': 0.04, 'line_accuracy_top_15': 0.04, 'line_mrr': 0.14814814814814814, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.02, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.02, 'total_samples': 50, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5064665597560335, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30211455211455207, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.34545454545454546, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.1, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.9166666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.02, 'line_accuracy_top_10': 0.04, 'line_accuracy_top_15': 0.04, 'line_mrr': 0.14814814814814814, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.02, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.02, 'total_samples': 50, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5064665597560335, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30211455211455207, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.34545454545454546, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 6: Loss = 12.5150, Reward = 1.6667, Epsilon = 0.1799, Temperature = 1.0000
+  Epoch wall time: 207s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7833333333333333, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.16666666666666666, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5041751742409637, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3038086913086913, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.36363636363636365, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 7, Batch 10/17, Avg Loss: 11.0258, Avg Reward: 1.6769
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.8333333333333334, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5033345309661098, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3059831194446579, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.36363636363636365, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.8333333333333334, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5033345309661098, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3059831194446579, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.36363636363636365, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 7: Loss = 11.2981, Reward = 1.7257, Epsilon = 0.1652, Temperature = 1.0000
+  Epoch wall time: 209s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7116666666666667, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.05555555555555555, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5054178642994431, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30624951971105807, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.36363636363636365, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 8, Batch 10/17, Avg Loss: 10.5498, Avg Reward: 1.7283
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.8055555555555557, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.02, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.05555555555555555, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5062593108645741, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30669213265367107, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.36363636363636365, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.8055555555555557, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.02, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.05555555555555555, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5062593108645741, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30669213265367107, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.36363636363636365, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 8: Loss = 10.1285, Reward = 1.7340, Epsilon = 0.1517, Temperature = 1.0000
+  Epoch wall time: 208s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=all
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.711025641025641, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.05555555555555555, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.35526315789473684, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.514085366387998, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3064231708462477, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.38181818181818183, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 9, Batch 10/17, Avg Loss: 8.5062, Avg Reward: 1.6800
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.8055555555555557, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.02, 'line_accuracy_top_15': 0.04, 'line_mrr': 0.08888888888888888, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5227202621939464, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3061725133840518, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.8055555555555557, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.02, 'line_accuracy_top_15': 0.04, 'line_mrr': 0.08888888888888888, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5227202621939464, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3061725133840518, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 9: Loss = 9.0089, Reward = 1.7721, Epsilon = 0.1393, Temperature = 1.0000
+  Epoch wall time: 210s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.716025641025641, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.07417582417582418, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5215041537409958, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30578449328449325, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 10, Batch 10/17, Avg Loss: 8.6963, Avg Reward: 1.8318
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.03571428571428571, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5247936274252064, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3047542735042735, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.03571428571428571, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5247936274252064, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3047542735042735, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 10: Loss = 7.9812, Reward = 1.7564, Epsilon = 0.1280, Temperature = 1.0000
+  Epoch wall time: 209s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7160256410256409, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.35526315789473684, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5171181888287151, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3034722222222222, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.38181818181818183, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 11, Batch 10/17, Avg Loss: 7.5048, Avg Reward: 1.7357
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5225898735767157, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30596833721833716, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5225898735767157, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30596833721833716, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 11: Loss = 7.7700, Reward = 1.8094, Epsilon = 0.1175, Temperature = 1.0000
+  Epoch wall time: 210s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7174242424242424, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.06666666666666667, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5215552356999725, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3057081807081807, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 12, Batch 10/17, Avg Loss: 7.2915, Avg Reward: 1.8669
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5219215360662728, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30476073072226917, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5219215360662728, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30476073072226917, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 12: Loss = 6.9057, Reward = 1.7969, Epsilon = 0.1079, Temperature = 1.0000
+  Epoch wall time: 210s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7340909090909091, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5219215360662728, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30476073072226917, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 13, Batch 10/17, Avg Loss: 6.8912, Avg Reward: 1.8510
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5207989379042011, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3056764816380201, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5207989379042011, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3056764816380201, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 13: Loss = 6.4608, Reward = 1.8284, Epsilon = 0.0991, Temperature = 1.0000
+  Epoch wall time: 210s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7340909090909091, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.07142857142857142, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5207989379042011, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304608105569644, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 14, Batch 10/17, Avg Loss: 6.4671, Avg Reward: 1.8593
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5208832833832834, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3042196051811436, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5208832833832834, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3042196051811436, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 14: Loss = 6.5448, Reward = 1.8825, Epsilon = 0.0910, Temperature = 1.0000
+  Epoch wall time: 209s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7340909090909091, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.35526315789473684, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5143043360148623, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3042196051811436, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.38181818181818183, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 15, Batch 10/17, Avg Loss: 6.3189, Avg Reward: 1.8490
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5224805530726583, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3042196051811436, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5224805530726583, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3042196051811436, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 15: Loss = 6.0994, Reward = 1.8347, Epsilon = 0.0836, Temperature = 1.0000
+  Epoch wall time: 210s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.736111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5227155154786732, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3043944303559688, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 16, Batch 10/17, Avg Loss: 5.4377, Avg Reward: 1.8319
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.35526315789473684, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5161365681102522, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3062400206630975, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.38181818181818183, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.35526315789473684, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5161365681102522, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3062400206630975, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.38181818181818183, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 16: Loss = 5.6089, Reward = 1.8933, Epsilon = 0.0767, Temperature = 1.0000
+  Epoch wall time: 209s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.736111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.35526315789473684, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5161365681102522, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30693563914717753, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.38181818181818183, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 17, Batch 10/17, Avg Loss: 5.2847, Avg Reward: 1.7896
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5244952050873103, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3068211702827087, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5244952050873103, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3068211702827087, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 17: Loss = 5.5238, Reward = 1.8464, Epsilon = 0.0705, Temperature = 1.0000
+  Epoch wall time: 212s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.736111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5244952050873103, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30692683384991076, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 18, Batch 10/17, Avg Loss: 5.8831, Avg Reward: 1.9761
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5319730342756658, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30624882596036435, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5319730342756658, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30624882596036435, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 18: Loss = 5.4439, Reward = 1.9056, Epsilon = 0.0647, Temperature = 1.0000
+  Epoch wall time: 211s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5316597510676457, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3059958204188973, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 19, Batch 10/17, Avg Loss: 5.7029, Avg Reward: 1.9489
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5319730342756658, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3059958204188973, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5319730342756658, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3059958204188973, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 19: Loss = 5.7610, Reward = 1.9279, Epsilon = 0.0594, Temperature = 1.0000
+  Epoch wall time: 212s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5319103776340618, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30517164459472146, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 20, Batch 10/17, Avg Loss: 4.8227, Avg Reward: 1.8813
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5319103776340618, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5319103776340618, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 20: Loss = 5.2982, Reward = 1.9028, Epsilon = 0.0546, Temperature = 1.0000
+  Epoch wall time: 212s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5314717811428338, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 21, Batch 10/17, Avg Loss: 5.2896, Avg Reward: 1.9341
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5253314302656408, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5253314302656408, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Epoch 21: Loss = 5.2257, Reward = 1.9174, Epsilon = 0.0501, Temperature = 1.0000
+  Epoch wall time: 212s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5253314302656408, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 22, Batch 10/17, Avg Loss: 5.1039, Avg Reward: 1.8912
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5248928337744128, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30498086315394, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5248928337744128, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30498086315394, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 22: Loss = 5.0736, Reward = 1.8982, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 211s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.525989325002483, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.30498086315394, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 23, Batch 10/17, Avg Loss: 5.8523, Avg Reward: 1.9705
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5253314302656409, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5253314302656409, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 23: Loss = 5.3180, Reward = 1.9275, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 211s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5256447134736608, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.304713769136846, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 24, Batch 10/17, Avg Loss: 4.9102, Avg Reward: 1.8823
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5256447134736608, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3043703625434394, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5256447134736608, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5384615384615384, 'oracle_line_mrr': 0.3043703625434394, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 24: Loss = 5.0151, Reward = 1.9072, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 212s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 25, Batch 10/17, Avg Loss: 4.7504, Avg Reward: 1.8804
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 25: Loss = 4.7408, Reward = 1.8975, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 213s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 26, Batch 10/17, Avg Loss: 5.0783, Avg Reward: 1.9088
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 26: Loss = 5.0311, Reward = 1.9192, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 211s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 27, Batch 10/17, Avg Loss: 4.6573, Avg Reward: 1.8447
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5379254152280467, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5379254152280467, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 27: Loss = 4.3537, Reward = 1.8760, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 212s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=all
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5379254152280467, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 28, Batch 10/17, Avg Loss: 4.1740, Avg Reward: 1.8882
+Agents saved: tag=best_oracle_func, agents=all
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5379254152280467, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5379254152280467, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 28: Loss = 4.4572, Reward = 1.9179, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 213s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=all
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5379254152280467, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.41818181818181815, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 29, Batch 10/17, Avg Loss: 3.9838, Avg Reward: 1.9034
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 29: Loss = 4.0635, Reward = 1.9074, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 210s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Epoch 30, Batch 10/17, Avg Loss: 4.9801, Avg Reward: 1.9255
+Quick Eval Metrics: {'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+{'file_accuracy_top_1': 0.12, 'file_accuracy_top_5': 0.64, 'file_mrr': 0.28333333333333327, 'func_accuracy_top_1': 0.08, 'func_accuracy_top_5': 0.12, 'func_accuracy_top_10': 0.12, 'func_accuracy_top_15': 0.12, 'func_mrr': 0.7916666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.64, 'issue_func_coverage': 0.12, 'issue_line_coverage': 0.0, 'total_samples': 50, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Epoch 30: Loss = 4.9860, Reward = 1.9392, Epsilon = 0.0500, Temperature = 1.0000
+  Epoch wall time: 209s | Peak GPU: 4.9 GB
+Full Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Final Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.09210526315789473, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7861111111111111, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5313464678596257, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.30501138818446505, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+==========================================
+Training finished: Fri Mar 27 09:07:34 EDT 2026
+Running evaluation on test set...
+==========================================
+--- Evaluating FINAL checkpoint ---
+Loaded 71 test samples
+Loaded agents from: /C2C/outputs/checkpoints/rl/elasticsearch/file_agent_vt_intermediate_seed42.pt, /C2C/outputs/checkpoints/rl/elasticsearch/function_agent_vt_intermediate_seed42.pt, /C2C/outputs/checkpoints/rl/elasticsearch/line_agent_vt_intermediate_seed42.pt
+Agents loaded successfully
+============================================================
+RUNNING ALL EVALUATIONS
+============================================================
+
+1. Running E2E cascade evaluation...
+Starting E2E cascade evaluation...
+
+2. Running LLMAO baseline evaluation (ground truth files)...
+Starting evaluation with ground truth files (LLMAO baseline comparison)...
+Processing sample 1/71: 103569
+Processing sample 2/71: 103011
+Processing sample 3/71: 102121
+Processing sample 4/71: 101958
+Processing sample 5/71: 101958
+Processing sample 6/71: 101958
+Processing sample 7/71: 101477
+Processing sample 8/71: 101477
+Processing sample 9/71: 101144
+Processing sample 10/71: 100460
+Processing sample 11/71: 100434
+Processing sample 12/71: 100109
+Processing sample 13/71: 100109
+Processing sample 14/71: 99696
+Processing sample 15/71: 99696
+Processing sample 16/71: 99696
+Processing sample 17/71: 99696
+Processing sample 18/71: 99696
+Processing sample 19/71: 98695
+Processing sample 20/71: 98695
+Processing sample 21/71: 98695
+Processing sample 22/71: 98695
+Processing sample 23/71: 98611
+Processing sample 24/71: 98611
+Processing sample 25/71: 98606
+Processing sample 26/71: 97638
+Processing sample 27/71: 97638
+Processing sample 28/71: 97320
+Processing sample 29/71: 97320
+Processing sample 30/71: 97311
+Processing sample 31/71: 97311
+Processing sample 32/71: 95786
+Processing sample 33/71: 95786
+Processing sample 34/71: 95786
+Processing sample 35/71: 95670
+Processing sample 36/71: 95561
+Processing sample 37/71: 95561
+Processing sample 38/71: 95352
+Processing sample 39/71: 95334
+Processing sample 40/71: 94672
+Processing sample 41/71: 94096
+Processing sample 42/71: 94085
+Processing sample 43/71: 94085
+Processing sample 44/71: 94067
+Processing sample 45/71: 93989
+Processing sample 46/71: 93989
+Processing sample 47/71: 93989
+Processing sample 48/71: 93989
+Processing sample 49/71: 93989
+Processing sample 50/71: 93989
+Processing sample 51/71: 93989
+Processing sample 52/71: 93989
+Processing sample 53/71: 93989
+Processing sample 54/71: 93989
+Processing sample 55/71: 93966
+Processing sample 56/71: 93966
+Processing sample 57/71: 93966
+Processing sample 58/71: 93824
+Processing sample 59/71: 93824
+Processing sample 60/71: 93824
+Processing sample 61/71: 93824
+Processing sample 62/71: 93824
+Processing sample 63/71: 93440
+Processing sample 64/71: 93440
+Processing sample 65/71: 93005
+Processing sample 66/71: 93005
+Processing sample 67/71: 92898
+Processing sample 68/71: 92898
+Processing sample 69/71: 92562
+Processing sample 70/71: 92562
+Processing sample 71/71: 92243
+
+3. Running oracle per-level evaluation...
+Starting issue-based evaluation...
+Processing sample 1/71: 103569
+Processing sample 2/71: 103011
+Processing sample 3/71: 102121
+Processing sample 4/71: 101958
+Processing sample 5/71: 101958
+Processing sample 6/71: 101958
+Processing sample 7/71: 101477
+Processing sample 8/71: 101477
+Processing sample 9/71: 101144
+Processing sample 10/71: 100460
+Processing sample 11/71: 100434
+Processing sample 12/71: 100109
+Processing sample 13/71: 100109
+Processing sample 14/71: 99696
+Processing sample 15/71: 99696
+Processing sample 16/71: 99696
+Processing sample 17/71: 99696
+Processing sample 18/71: 99696
+Processing sample 19/71: 98695
+Processing sample 20/71: 98695
+Processing sample 21/71: 98695
+Processing sample 22/71: 98695
+Processing sample 23/71: 98611
+Processing sample 24/71: 98611
+Processing sample 25/71: 98606
+Processing sample 26/71: 97638
+Processing sample 27/71: 97638
+Processing sample 28/71: 97320
+Processing sample 29/71: 97320
+Processing sample 30/71: 97311
+Processing sample 31/71: 97311
+Processing sample 32/71: 95786
+Processing sample 33/71: 95786
+Processing sample 34/71: 95786
+Processing sample 35/71: 95670
+Processing sample 36/71: 95561
+Processing sample 37/71: 95561
+Processing sample 38/71: 95352
+Processing sample 39/71: 95334
+Processing sample 40/71: 94672
+Processing sample 41/71: 94096
+Processing sample 42/71: 94085
+Processing sample 43/71: 94085
+Processing sample 44/71: 94067
+Processing sample 45/71: 93989
+Processing sample 46/71: 93989
+Processing sample 47/71: 93989
+Processing sample 48/71: 93989
+Processing sample 49/71: 93989
+Processing sample 50/71: 93989
+Processing sample 51/71: 93989
+Processing sample 52/71: 93989
+Processing sample 53/71: 93989
+Processing sample 54/71: 93989
+Processing sample 55/71: 93966
+Processing sample 56/71: 93966
+Processing sample 57/71: 93966
+Processing sample 58/71: 93824
+Processing sample 59/71: 93824
+Processing sample 60/71: 93824
+Processing sample 61/71: 93824
+Processing sample 62/71: 93824
+Processing sample 63/71: 93440
+Processing sample 64/71: 93440
+Processing sample 65/71: 93005
+Processing sample 66/71: 93005
+Processing sample 67/71: 92898
+Processing sample 68/71: 92898
+Processing sample 69/71: 92562
+Processing sample 70/71: 92562
+Processing sample 71/71: 92243
+
+Inference timing (ms/bug): mean=461.7, p50=404.8, p95=1115.7
+
+4. Running multi-line evaluation...
+Starting multi-line evaluation...
+
+Multi-line evaluation results:
+  Multi-file recall: 0.5429 (33 issues)
+  Multi-line recall: 0.1121 (33 issues)
+
+E2E CASCADE EVALUATION RESULTS
+============================================================
+
+File Level Metrics:
+  Hit@1:  0.3662
+  Hit@5:  0.8028
+  Hit@10: 0.8028
+  MRR:     0.5225
+
+Function Level Metrics:
+  Hit@1:  0.3099
+  Hit@5:  0.6338
+  Hit@10: 0.7183
+  Hit@15: 0.7465
+  MRR:     0.4526
+
+Line Level Metrics:
+  Hit@1:  0.1111
+  Hit@5:  0.5556
+  Hit@10: 0.8889
+  Hit@15: 1.0000
+  MRR:     0.2997
+
+Evaluation Statistics:
+  Total samples: 71
+  File evaluations: 71
+  Function evaluations: 71
+  Line evaluations: 9
+
+Note: E2E cascade: file agent predicts → func agent gets top-1 predicted file → line agent gets top-1 predicted function
+
+LLMAO BASELINE EVALUATION RESULTS
+============================================================
+
+Function Level Metrics:
+  Hit@1:  0.4507
+  Hit@5:  0.7465
+  Hit@10: 0.8732
+  Hit@15: 0.9296
+  MRR:     0.5737
+
+Line Level Metrics:
+  Hit@1:  0.0526
+  Hit@5:  0.2105
+  Hit@10: 0.3684
+  Hit@15: 0.4211
+  MRR:     0.1369
+
+Evaluation Statistics:
+  Total samples: 71
+  Function evaluations: 71
+  Line evaluations: 19
+
+Note: Evaluation using ground truth files (LLMAO baseline comparison)
+
+ORACLE PER-LEVEL EVALUATION RESULTS
+============================================================
+
+File Level Metrics:
+  Hit@1:  0.3662
+  Hit@5:  0.8028
+  Hit@10: 0.8028
+  MRR:     0.5225
+
+Function Level Metrics:
+  Hit@1:  0.4091
+  Hit@5:  0.7227
+  Hit@10: 0.7909
+  Hit@15: 0.8227
+  MRR:     0.5356
+
+Line Level Metrics:
+  Hit@1:  0.2290
+  Hit@5:  0.5960
+  Hit@10: 0.7643
+  Hit@15: 0.8114
+  MRR:     0.4027
+
+Evaluation Statistics:
+  Total samples: 71
+  File evaluations: 71
+  Function evaluations: 220
+  Line evaluations: 297
+
+============================================================
+E2E vs LLMAO COMPARISON (paper Table 3)
+============================================================
+
+Function Level:
+  E2E   Hit@1: 0.3099
+  LLMAO Hit@1: 0.4507
+
+Line Level:
+  E2E   MRR:   0.2997
+  LLMAO MRR:   0.1369
+  E2E   Hit@5: 0.5556
+  LLMAO Hit@5: 0.2105
+
+Combined results saved to: combined_evaluation_results.json
+==========================================
+Final checkpoint eval done: Fri Mar 27 09:09:01 EDT 2026
+Running evaluation on BEST checkpoint...
+==========================================
+--- Evaluating BEST checkpoint ---
+Loaded 71 test samples
+Loaded agents from: /C2C/outputs/checkpoints/rl/elasticsearch/file_agent_vt_intermediate_seed42_best_oracle_line.pt, /C2C/outputs/checkpoints/rl/elasticsearch/function_agent_vt_intermediate_seed42_best_oracle_line.pt, /C2C/outputs/checkpoints/rl/elasticsearch/line_agent_vt_intermediate_seed42_best_oracle_line.pt
+Agents loaded successfully
+============================================================
+RUNNING ALL EVALUATIONS
+============================================================
+
+1. Running E2E cascade evaluation...
+Starting E2E cascade evaluation...
+
+2. Running LLMAO baseline evaluation (ground truth files)...
+Starting evaluation with ground truth files (LLMAO baseline comparison)...
+Processing sample 1/71: 103569
+Processing sample 2/71: 103011
+Processing sample 3/71: 102121
+Processing sample 4/71: 101958
+Processing sample 5/71: 101958
+Processing sample 6/71: 101958
+Processing sample 7/71: 101477
+Processing sample 8/71: 101477
+Processing sample 9/71: 101144
+Processing sample 10/71: 100460
+Processing sample 11/71: 100434
+Processing sample 12/71: 100109
+Processing sample 13/71: 100109
+Processing sample 14/71: 99696
+Processing sample 15/71: 99696
+Processing sample 16/71: 99696
+Processing sample 17/71: 99696
+Processing sample 18/71: 99696
+Processing sample 19/71: 98695
+Processing sample 20/71: 98695
+Processing sample 21/71: 98695
+Processing sample 22/71: 98695
+Processing sample 23/71: 98611
+Processing sample 24/71: 98611
+Processing sample 25/71: 98606
+Processing sample 26/71: 97638
+Processing sample 27/71: 97638
+Processing sample 28/71: 97320
+Processing sample 29/71: 97320
+Processing sample 30/71: 97311
+Processing sample 31/71: 97311
+Processing sample 32/71: 95786
+Processing sample 33/71: 95786
+Processing sample 34/71: 95786
+Processing sample 35/71: 95670
+Processing sample 36/71: 95561
+Processing sample 37/71: 95561
+Processing sample 38/71: 95352
+Processing sample 39/71: 95334
+Processing sample 40/71: 94672
+Processing sample 41/71: 94096
+Processing sample 42/71: 94085
+Processing sample 43/71: 94085
+Processing sample 44/71: 94067
+Processing sample 45/71: 93989
+Processing sample 46/71: 93989
+Processing sample 47/71: 93989
+Processing sample 48/71: 93989
+Processing sample 49/71: 93989
+Processing sample 50/71: 93989
+Processing sample 51/71: 93989
+Processing sample 52/71: 93989
+Processing sample 53/71: 93989
+Processing sample 54/71: 93989
+Processing sample 55/71: 93966
+Processing sample 56/71: 93966
+Processing sample 57/71: 93966
+Processing sample 58/71: 93824
+Processing sample 59/71: 93824
+Processing sample 60/71: 93824
+Processing sample 61/71: 93824
+Processing sample 62/71: 93824
+Processing sample 63/71: 93440
+Processing sample 64/71: 93440
+Processing sample 65/71: 93005
+Processing sample 66/71: 93005
+Processing sample 67/71: 92898
+Processing sample 68/71: 92898
+Processing sample 69/71: 92562
+Processing sample 70/71: 92562
+Processing sample 71/71: 92243
+
+3. Running oracle per-level evaluation...
+Starting issue-based evaluation...
+Processing sample 1/71: 103569
+Processing sample 2/71: 103011
+Processing sample 3/71: 102121
+Processing sample 4/71: 101958
+Processing sample 5/71: 101958
+Processing sample 6/71: 101958
+Processing sample 7/71: 101477
+Processing sample 8/71: 101477
+Processing sample 9/71: 101144
+Processing sample 10/71: 100460
+Processing sample 11/71: 100434
+Processing sample 12/71: 100109
+Processing sample 13/71: 100109
+Processing sample 14/71: 99696
+Processing sample 15/71: 99696
+Processing sample 16/71: 99696
+Processing sample 17/71: 99696
+Processing sample 18/71: 99696
+Processing sample 19/71: 98695
+Processing sample 20/71: 98695
+Processing sample 21/71: 98695
+Processing sample 22/71: 98695
+Processing sample 23/71: 98611
+Processing sample 24/71: 98611
+Processing sample 25/71: 98606
+Processing sample 26/71: 97638
+Processing sample 27/71: 97638
+Processing sample 28/71: 97320
+Processing sample 29/71: 97320
+Processing sample 30/71: 97311
+Processing sample 31/71: 97311
+Processing sample 32/71: 95786
+Processing sample 33/71: 95786
+Processing sample 34/71: 95786
+Processing sample 35/71: 95670
+Processing sample 36/71: 95561
+Processing sample 37/71: 95561
+Processing sample 38/71: 95352
+Processing sample 39/71: 95334
+Processing sample 40/71: 94672
+Processing sample 41/71: 94096
+Processing sample 42/71: 94085
+Processing sample 43/71: 94085
+Processing sample 44/71: 94067
+Processing sample 45/71: 93989
+Processing sample 46/71: 93989
+Processing sample 47/71: 93989
+Processing sample 48/71: 93989
+Processing sample 49/71: 93989
+Processing sample 50/71: 93989
+Processing sample 51/71: 93989
+Processing sample 52/71: 93989
+Processing sample 53/71: 93989
+Processing sample 54/71: 93989
+Processing sample 55/71: 93966
+Processing sample 56/71: 93966
+Processing sample 57/71: 93966
+Processing sample 58/71: 93824
+Processing sample 59/71: 93824
+Processing sample 60/71: 93824
+Processing sample 61/71: 93824
+Processing sample 62/71: 93824
+Processing sample 63/71: 93440
+Processing sample 64/71: 93440
+Processing sample 65/71: 93005
+Processing sample 66/71: 93005
+Processing sample 67/71: 92898
+Processing sample 68/71: 92898
+Processing sample 69/71: 92562
+Processing sample 70/71: 92562
+Processing sample 71/71: 92243
+
+Inference timing (ms/bug): mean=463.5, p50=408.3, p95=1119.5
+
+4. Running multi-line evaluation...
+Starting multi-line evaluation...
+
+Multi-line evaluation results:
+  Multi-file recall: 0.4530 (33 issues)
+  Multi-line recall: 0.1313 (33 issues)
+
+E2E CASCADE EVALUATION RESULTS
+============================================================
+
+File Level Metrics:
+  Hit@1:  0.3521
+  Hit@5:  0.7465
+  Hit@10: 0.7465
+  MRR:     0.4904
+
+Function Level Metrics:
+  Hit@1:  0.2817
+  Hit@5:  0.5352
+  Hit@10: 0.6620
+  Hit@15: 0.6901
+  MRR:     0.4008
+
+Line Level Metrics:
+  Hit@1:  0.1250
+  Hit@5:  0.1250
+  Hit@10: 0.2500
+  Hit@15: 0.3750
+  MRR:     0.1572
+
+Evaluation Statistics:
+  Total samples: 71
+  File evaluations: 71
+  Function evaluations: 71
+  Line evaluations: 8
+
+Note: E2E cascade: file agent predicts → func agent gets top-1 predicted file → line agent gets top-1 predicted function
+
+LLMAO BASELINE EVALUATION RESULTS
+============================================================
+
+Function Level Metrics:
+  Hit@1:  0.2958
+  Hit@5:  0.6761
+  Hit@10: 0.8592
+  Hit@15: 0.9296
+  MRR:     0.4757
+
+Line Level Metrics:
+  Hit@1:  0.1333
+  Hit@5:  0.1333
+  Hit@10: 0.4000
+  Hit@15: 0.4667
+  MRR:     0.1766
+
+Evaluation Statistics:
+  Total samples: 71
+  Function evaluations: 71
+  Line evaluations: 15
+
+Note: Evaluation using ground truth files (LLMAO baseline comparison)
+
+ORACLE PER-LEVEL EVALUATION RESULTS
+============================================================
+
+File Level Metrics:
+  Hit@1:  0.3521
+  Hit@5:  0.7465
+  Hit@10: 0.7465
+  MRR:     0.4904
+
+Function Level Metrics:
+  Hit@1:  0.2864
+  Hit@5:  0.6636
+  Hit@10: 0.7727
+  Hit@15: 0.8045
+  MRR:     0.4393
+
+Line Level Metrics:
+  Hit@1:  0.2896
+  Hit@5:  0.5926
+  Hit@10: 0.7340
+  Hit@15: 0.7879
+  MRR:     0.4237
+
+Evaluation Statistics:
+  Total samples: 71
+  File evaluations: 71
+  Function evaluations: 220
+  Line evaluations: 297
+
+============================================================
+E2E vs LLMAO COMPARISON (paper Table 3)
+============================================================
+
+Function Level:
+  E2E   Hit@1: 0.2817
+  LLMAO Hit@1: 0.2958
+
+Line Level:
+  E2E   MRR:   0.1572
+  LLMAO MRR:   0.1766
+  E2E   Hit@5: 0.1250
+  LLMAO Hit@5: 0.1333
+
+Combined results saved to: combined_evaluation_results.json

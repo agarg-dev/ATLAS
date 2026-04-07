@@ -1,0 +1,989 @@
+[Step 1] Parsing raw Elasticsearch dataset...
+Processing data point 0
+Processing data point 1
+Processing data point 2
+Processing data point 3
+Processing data point 4
+Processing data point 5
+Processing data point 6
+Processing data point 7
+Processing data point 8
+Processing data point 9
+Processing data point 10
+Processing data point 11
+Processing data point 12
+Processing data point 13
+Processing data point 14
+Processing data point 15
+Processing data point 16
+Processing data point 17
+Processing data point 18
+Processing data point 19
+Processing data point 20
+Processing data point 21
+Processing data point 22
+Processing data point 23
+Processing data point 24
+Processing data point 25
+Processing data point 26
+Processing data point 27
+Processing data point 28
+Processing data point 29
+Processing data point 30
+Processing data point 31
+Processing data point 32
+Processing data point 33
+Processing data point 34
+Processing data point 35
+Processing data point 36
+Processing data point 37
+Processing data point 38
+Processing data point 39
+Processing data point 40
+Processing data point 41
+Processing data point 42
+Processing data point 43
+Processing data point 44
+Processing data point 45
+Processing data point 46
+Processing data point 47
+Processing data point 48
+Processing data point 49
+Processing data point 50
+Processing data point 51
+Processing data point 52
+Processing data point 53
+Processing data point 54
+Processing data point 55
+Processing data point 56
+Processing data point 57
+Processing data point 58
+Processing data point 59
+Processing data point 60
+Processing data point 61
+Processing data point 62
+Processing data point 63
+Processing data point 64
+Processing data point 65
+Processing data point 66
+Processing data point 67
+Processing data point 68
+Processing data point 69
+Processing data point 70
+Processing data point 71
+Processing data point 72
+Processing data point 73
+Processing data point 74
+Processing data point 75
+Processing data point 76
+Processing data point 77
+Processing data point 78
+Processing data point 79
+Processing data point 80
+Processing data point 81
+Processing data point 82
+Processing data point 83
+Processing data point 84
+Processing data point 85
+Processing data point 86
+Processing data point 87
+Processing data point 88
+Processing data point 89
+Processing data point 90
+Processing data point 91
+Processing data point 92
+Processing data point 93
+Processing data point 94
+Processing data point 95
+Processing data point 96
+Processing data point 97
+Processing data point 98
+Processing data point 99
+Processing data point 100
+Processing data point 101
+Processing data point 102
+Processing data point 103
+Processing data point 104
+Processing data point 105
+Processing data point 106
+Processing data point 107
+Processing data point 108
+Processing data point 109
+Processing data point 110
+Processing data point 111
+Processing data point 112
+Processing data point 113
+Processing data point 114
+Processing data point 115
+Processing data point 116
+Processing data point 117
+Processing data point 118
+Processing data point 119
+Processing data point 120
+Processing data point 121
+Processing data point 122
+Processing data point 123
+Processing data point 124
+Processing data point 125
+Processing data point 126
+Processing data point 127
+Processing data point 128
+Processing data point 129
+Processing data point 130
+Processing data point 131
+Processing data point 132
+Processing data point 133
+Processing data point 134
+Processing data point 135
+Processing data point 136
+Processing data point 137
+Processing data point 138
+Processing data point 139
+Processing data point 140
+Processing data point 141
+Processing data point 142
+Processing data point 143
+Processing data point 144
+Processing data point 145
+Processing data point 146
+Processing data point 147
+Processing data point 148
+Processing data point 149
+Processing data point 150
+Processing data point 151
+Processing data point 152
+Processing data point 153
+Processing data point 154
+Processing data point 155
+Processing data point 156
+Processing data point 157
+Processing data point 158
+Processing data point 159
+Processing data point 160
+Processing data point 161
+Processing data point 162
+Processing data point 163
+Processing data point 164
+Processing data point 165
+Processing data point 166
+Processing data point 167
+Processing data point 168
+Processing data point 169
+Processing data point 170
+Processing data point 171
+Processing data point 172
+Processing data point 173
+Processing data point 174
+Processing data point 175
+Processing data point 176
+Processing data point 177
+Processing data point 178
+Processing data point 179
+Processing data point 180
+Processing data point 181
+Processing data point 182
+Processing data point 183
+Processing data point 184
+Processing data point 185
+Processing data point 186
+Processing data point 187
+Processing data point 188
+Processing data point 189
+Processing data point 190
+Processing data point 191
+Processing data point 192
+Processing data point 193
+Processing data point 194
+Processing data point 195
+Processing data point 196
+Processing data point 197
+Processing data point 198
+Processing data point 199
+Processing data point 200
+Processing data point 201
+Processing data point 202
+Processing data point 203
+Processing data point 204
+Processing data point 205
+Processing data point 206
+Processing data point 207
+Processing data point 208
+Processing data point 209
+Processing data point 210
+Processing data point 211
+Processing data point 212
+Processing data point 213
+Processing data point 214
+Processing data point 215
+Processing data point 216
+Processing data point 217
+Processing data point 218
+Processing data point 219
+Processing data point 220
+Processing data point 221
+Processing data point 222
+Processing data point 223
+Processing data point 224
+Processing data point 225
+Processing data point 226
+Processing data point 227
+Processing data point 228
+Processing data point 229
+Processing data point 230
+Processing data point 231
+Processing data point 232
+Processing data point 233
+Processing data point 234
+Processing data point 235
+Processing data point 236
+Processing data point 237
+Processing data point 238
+Processing data point 239
+Processing data point 240
+Processing data point 241
+Processing data point 242
+Processing data point 243
+Processing data point 244
+Processing data point 245
+Processing data point 246
+Processing data point 247
+Processing data point 248
+Processing data point 249
+Processing data point 250
+Processing data point 251
+Processing data point 252
+Processing data point 253
+Processing data point 254
+Processing data point 255
+Processing data point 256
+Processing data point 257
+Processing data point 258
+Processing data point 259
+Processing data point 260
+Processing data point 261
+Processing data point 262
+Processing data point 263
+Processing data point 264
+Processing data point 265
+Processing data point 266
+Processing data point 267
+Processing data point 268
+Processing data point 269
+Processing data point 270
+Processing data point 271
+Processing data point 272
+Processing data point 273
+Processing data point 274
+Processing data point 275
+Processing data point 276
+Processing data point 277
+Processing data point 278
+Processing data point 279
+Processing data point 280
+Processing data point 281
+Processing data point 282
+Processing data point 283
+Processing data point 284
+Processing data point 285
+Processing data point 286
+Processing data point 287
+Processing data point 288
+Processing data point 289
+Processing data point 290
+Processing data point 291
+Processing data point 292
+Processing data point 293
+Processing data point 294
+Processing data point 295
+Processing data point 296
+Processing data point 297
+Processing data point 298
+Processing data point 299
+Processing data point 300
+Processing data point 301
+Processing data point 302
+Processing data point 303
+Processing data point 304
+Processing data point 305
+Processing data point 306
+Processing data point 307
+Processing data point 308
+Processing data point 309
+Processing data point 310
+Processing data point 311
+Processing data point 312
+Processing data point 313
+Processing data point 314
+Processing data point 315
+Processing data point 316
+Processing data point 317
+Processing data point 318
+Processing data point 319
+Processing data point 320
+Processing data point 321
+Processing data point 322
+Processing data point 323
+Processing data point 324
+Processing data point 325
+Processing data point 326
+Processing data point 327
+Processing data point 328
+Processing data point 329
+Processing data point 330
+Processing data point 331
+Processing data point 332
+Processing data point 333
+Processing data point 334
+Processing data point 335
+Processing data point 336
+Processing data point 337
+Processing data point 338
+Processing data point 339
+Processing data point 340
+Processing data point 341
+Processing data point 342
+Processing data point 343
+Processing data point 344
+Processing data point 345
+Processing data point 346
+Processing data point 347
+Processing data point 348
+Processing data point 349
+Processing data point 350
+Processing data point 351
+Processing data point 352
+Processing data point 353
+Processing data point 354
+Processing data point 355
+Processing data point 356
+Processing data point 357
+Processing data point 358
+Processing data point 359
+Processing data point 360
+Processing data point 361
+Processing data point 362
+Processing data point 363
+Processing data point 364
+Processing data point 365
+Processing data point 366
+Processing data point 367
+Processing data point 368
+Processing data point 369
+Processing data point 370
+Processing data point 371
+Processing data point 372
+Processing data point 373
+Processing data point 374
+Processing data point 375
+Processing data point 376
+Processing data point 377
+Processing data point 378
+Processing data point 379
+Processing data point 380
+Processing data point 381
+Processing data point 382
+Processing data point 383
+Processing data point 384
+Processing data point 385
+Processing data point 386
+Processing data point 387
+Processing data point 388
+Processing data point 389
+Processing data point 390
+Processing data point 391
+Processing data point 392
+Processing data point 393
+Processing data point 394
+Processing data point 395
+Processing data point 396
+Processing data point 397
+Processing data point 398
+Processing data point 399
+Processing data point 400
+Processing data point 401
+Processing data point 402
+Processing data point 403
+Processing data point 404
+Processing data point 405
+Processing data point 406
+Processing data point 407
+Processing data point 408
+Processing data point 409
+Processing data point 410
+Processing data point 411
+Processing data point 412
+Processing data point 413
+Processing data point 414
+Processing data point 415
+Processing data point 416
+Processing data point 417
+Processing data point 418
+Processing data point 419
+Processing data point 420
+Processing data point 421
+Processing data point 422
+Processing data point 423
+Processing data point 424
+Processing data point 425
+Processing data point 426
+Processing data point 427
+Processing data point 428
+Processing data point 429
+Processing data point 430
+Processing data point 431
+Processing data point 432
+Processing data point 433
+Processing data point 434
+Processing data point 435
+Processing data point 436
+Processing data point 437
+Processing data point 438
+Processing data point 439
+Processing data point 440
+Processing data point 441
+Processing data point 442
+Processing data point 443
+Processing data point 444
+Processing data point 445
+Processing data point 446
+Processing data point 447
+Processing data point 448
+Processing data point 449
+Processing data point 450
+Processing data point 451
+Processing data point 452
+Processing data point 453
+Processing data point 454
+Processing data point 455
+Processing data point 456
+Processing data point 457
+Processing data point 458
+Processing data point 459
+Processing data point 460
+Processing data point 461
+Processing data point 462
+Processing data point 463
+Processing data point 464
+Processing data point 465
+Processing data point 466
+Processing data point 467
+Processing data point 468
+Processing data point 469
+Processing data point 470
+Processing data point 471
+Processing data point 472
+Processing data point 473
+Processing data point 474
+Processing data point 475
+Processing data point 476
+Processing data point 477
+Processing data point 478
+Processing data point 479
+Processing data point 480
+Processing data point 481
+Processing data point 482
+Processing data point 483
+Processing data point 484
+Processing data point 485
+Processing data point 486
+Processing data point 487
+Processing data point 488
+Processing data point 489
+Processing data point 490
+Processing data point 491
+Processing data point 492
+Processing data point 493
+Processing data point 494
+Processing data point 495
+Processing data point 496
+Processing data point 497
+Processing data point 498
+Processing data point 499
+Parsed 10090 bug records → C2C/data/elasticsearch/bug_localization_dataset.json
+[Step 1] Done.
+[Step 2] Building triplet dataset (clones repos — may take a while)...
+Loading  C2C/data/elasticsearch/bug_localization_dataset.json...
+Loaded 10090 records.
+Pre-git filter: 4748 skipped, 5342 passing.
+  Cloning elasticsearch from local cache...
+
+Total input:      10090
+Pre-git skipped:  4748
+Post-git skipped: 0
+Triplets written: 5342
+Saved to C2C/data/elasticsearch/triplet_dataset.json
+
+Dataset Statistics (Table 2):
+  Unique issues:     326
+  Unique repos:      1
+  Total triplets:    5342
+  Unique buggy files:691
+  Unique negatives:  4837
+  Avg lines/issue:   16.4
+  Repos: ['elasticsearch']
+Saved statistics to C2C/data/elasticsearch/dataset_statistics.json
+
+Issue-level stratified split (by repo):
+  Train: 260 issues, 3592 triplets  (0 from singleton repos, forced to train)
+  Val:   33 issues, 1278 triplets
+  Test:  33 issues, 472 triplets
+[Step 2] Done.
+[Step 3] Training CodeBERT (initial)...
+Issue-level split: 3592 train triplets, 1278 val triplets (excluded 472 test triplets)
+Scheduler: 570 total steps (57/epoch), warmup=57
+
+==== Epoch 1 ====
+Eval - PosSim: 0.8612, NegSim: 0.7567, Top-1: 0.0160, Top-3: 0.0673, Top-5: 0.1210, Loss: 0.9032
+Validation Loss: 0.9032 | Val Top-3 Acc: 0.0673 | [loss=0.9032]
+Saved best model (loss=0.9032).
+
+==== Epoch 2 ====
+Eval - PosSim: 0.6004, NegSim: 0.1517, Top-1: 0.0393, Top-3: 0.1218, Top-5: 0.2035, Loss: 0.2315
+Validation Loss: 0.2315 | Val Top-3 Acc: 0.1218 | [loss=0.2315]
+Saved best model (loss=0.2315).
+
+==== Epoch 3 ====
+Eval - PosSim: 0.5727, NegSim: 0.0677, Top-1: 0.0409, Top-3: 0.1274, Top-5: 0.2067, Loss: 0.2242
+Validation Loss: 0.2242 | Val Top-3 Acc: 0.1274 | [loss=0.2242]
+Saved best model (loss=0.2242).
+
+==== Epoch 4 ====
+Eval - PosSim: 0.5681, NegSim: 0.0362, Top-1: 0.0433, Top-3: 0.1290, Top-5: 0.2099, Loss: 0.2168
+Validation Loss: 0.2168 | Val Top-3 Acc: 0.1290 | [loss=0.2168]
+Saved best model (loss=0.2168).
+
+==== Epoch 5 ====
+Eval - PosSim: 0.5560, NegSim: 0.0306, Top-1: 0.0425, Top-3: 0.1298, Top-5: 0.2083, Loss: 0.2539
+Validation Loss: 0.2539 | Val Top-3 Acc: 0.1298 | [loss=0.2539]
+
+==== Epoch 6 ====
+Eval - PosSim: 0.5362, NegSim: 0.0412, Top-1: 0.0425, Top-3: 0.1290, Top-5: 0.2099, Loss: 0.2691
+Validation Loss: 0.2691 | Val Top-3 Acc: 0.1290 | [loss=0.2691]
+
+==== Epoch 7 ====
+Eval - PosSim: 0.5324, NegSim: 0.0333, Top-1: 0.0433, Top-3: 0.1290, Top-5: 0.2091, Loss: 0.2608
+Validation Loss: 0.2608 | Val Top-3 Acc: 0.1290 | [loss=0.2608]
+Early stopping triggered.
+
+[Step 3] Done.
+[Step 4] Building per-repo FAISS index (initial model)...
+Loading triplets from:  C2C/data/elasticsearch/triplet_dataset.json
+Loaded 5342 triplets
+Using CodeBERT on device: cuda
+Found 1 repos: ['elasticsearch']
+
+Processing elasticsearch (SHA: 661ea5f)...
+  Embedding 16291 repo files for elasticsearch...
+  elasticsearch: 16872 vectors (16291 repo files, 691 positive mappings, 16872 unique contents)
+  Saved to  C2C /data/elasticsearch/faiss_index_codebert/elasticsearch
+
+Indexing complete. Total vectors across all repos: 16872
+Output saved to: C2C /data/elasticsearch/faiss_index_codebert
+[Step 4] Done.
+[Step 5] Mining hard negatives...
+Loading triplets from  C2C /data/elasticsearch/triplet_dataset.json
+Loaded 5342 triplets
+Loading per-repo FAISS indices from C2C/data/elasticsearch/faiss_index_codebert
+  Loaded elasticsearch: 16872 vectors
+Loaded indices for 1 repos
+Starting hard negative mining...
+Skipped 0 triplets (repo not in index), 0 triplets (no valid hard negative found)
+Mined 5342 hard triplets. Saving to:  C2C /data/elasticsearch/triplet_dataset_hardneg.json
+Done.
+[Step 5] Done.
+[Step 6] Retraining CodeBERT on hard negatives (warm-start from initial)...
+Issue-level split: 3592 train triplets, 1278 val triplets (excluded 472 test triplets)
+Loading weights from:  C2C/outputs/checkpoints/contrastive/elasticsearch/best_codebert_triplet.pt
+Scheduler: 855 total steps (57/epoch), warmup=0
+
+==== Epoch 1 ====
+Eval - PosSim: 0.5626, NegSim: 0.6510, Top-1: 0.0198, Top-3: 0.0633, Top-5: 0.1060, Loss: 0.4331
+Validation Loss: 0.4331 | Val Top-3 Acc: 0.0633 | [loss=0.4331]
+Saved best model (loss=0.4331).
+
+==== Epoch 2 ====
+Eval - PosSim: 0.5297, NegSim: 0.6012, Top-1: 0.0301, Top-3: 0.0902, Top-5: 0.1503, Loss: 0.4145
+Validation Loss: 0.4145 | Val Top-3 Acc: 0.0902 | [loss=0.4145]
+Saved best model (loss=0.4145).
+
+==== Epoch 3 ====
+Eval - PosSim: 0.5480, NegSim: 0.6000, Top-1: 0.0324, Top-3: 0.0957, Top-5: 0.1559, Loss: 0.3842
+Validation Loss: 0.3842 | Val Top-3 Acc: 0.0957 | [loss=0.3842]
+Saved best model (loss=0.3842).
+
+==== Epoch 4 ====
+Eval - PosSim: 0.5457, NegSim: 0.5806, Top-1: 0.0403, Top-3: 0.1210, Top-5: 0.1986, Loss: 0.3725
+Validation Loss: 0.3725 | Val Top-3 Acc: 0.1210 | [loss=0.3725]
+Saved best model (loss=0.3725).
+
+==== Epoch 5 ====
+Eval - PosSim: 0.5465, NegSim: 0.5855, Top-1: 0.0332, Top-3: 0.0997, Top-5: 0.1630, Loss: 0.3806
+Validation Loss: 0.3806 | Val Top-3 Acc: 0.0997 | [loss=0.3806]
+
+==== Epoch 6 ====
+Eval - PosSim: 0.5224, NegSim: 0.5743, Top-1: 0.0372, Top-3: 0.1116, Top-5: 0.1788, Loss: 0.3894
+Validation Loss: 0.3894 | Val Top-3 Acc: 0.1116 | [loss=0.3894]
+
+==== Epoch 7 ====
+Eval - PosSim: 0.5151, NegSim: 0.5609, Top-1: 0.0403, Top-3: 0.1195, Top-5: 0.1954, Loss: 0.3845
+Validation Loss: 0.3845 | Val Top-3 Acc: 0.1195 | [loss=0.3845]
+
+==== Epoch 8 ====
+Eval - PosSim: 0.5198, NegSim: 0.5519, Top-1: 0.0443, Top-3: 0.1329, Top-5: 0.2144, Loss: 0.3736
+Validation Loss: 0.3736 | Val Top-3 Acc: 0.1329 | [loss=0.3736]
+
+==== Epoch 9 ====
+Eval - PosSim: 0.5181, NegSim: 0.5281, Top-1: 0.0427, Top-3: 0.1266, Top-5: 0.2073, Loss: 0.3607
+Validation Loss: 0.3607 | Val Top-3 Acc: 0.1266 | [loss=0.3607]
+Saved best model (loss=0.3607).
+
+==== Epoch 10 ====
+Eval - PosSim: 0.5218, NegSim: 0.5566, Top-1: 0.0411, Top-3: 0.1203, Top-5: 0.1954, Loss: 0.3790
+Validation Loss: 0.3790 | Val Top-3 Acc: 0.1203 | [loss=0.3790]
+
+==== Epoch 11 ====
+Eval - PosSim: 0.5315, NegSim: 0.5619, Top-1: 0.0427, Top-3: 0.1250, Top-5: 0.2041, Loss: 0.3743
+Validation Loss: 0.3743 | Val Top-3 Acc: 0.1250 | [loss=0.3743]
+
+==== Epoch 12 ====
+Eval - PosSim: 0.5248, NegSim: 0.5469, Top-1: 0.0443, Top-3: 0.1313, Top-5: 0.2120, Loss: 0.3680
+Validation Loss: 0.3680 | Val Top-3 Acc: 0.1313 | [loss=0.3680]
+
+==== Epoch 13 ====
+Eval - PosSim: 0.5231, NegSim: 0.5462, Top-1: 0.0427, Top-3: 0.1282, Top-5: 0.2073, Loss: 0.3752
+Validation Loss: 0.3752 | Val Top-3 Acc: 0.1282 | [loss=0.3752]
+
+==== Epoch 14 ====
+Eval - PosSim: 0.5180, NegSim: 0.5443, Top-1: 0.0403, Top-3: 0.1210, Top-5: 0.1986, Loss: 0.3817
+Validation Loss: 0.3817 | Val Top-3 Acc: 0.1210 | [loss=0.3817]
+Early stopping triggered.
+
+[Step 6] Done.
+[Step 7] Rebuilding per-repo FAISS index (hard-neg model, reusing cached contents)...
+Loading triplets from:  C2C/data/elasticsearch/triplet_dataset_hardneg.json
+Loaded 5342 triplets
+Using CodeBERT on device: cuda
+Reusing file contents from:  C2C/data/elasticsearch/faiss_index_codebert
+Found 1 repos in triplets: ['elasticsearch']
+
+Processing elasticsearch (from cache)...
+  Re-embedding 16872 cached files for elasticsearch...
+  elasticsearch: 16872 vectors (from cache, 691 positive mappings)
+  Saved to  C2C/data/elasticsearch/faiss_index_codebert_hardneg/elasticsearch
+
+Indexing complete. Total vectors across all repos: 16872
+Output saved to:  C2C/data/elasticsearch/faiss_index_codebert_hardneg
+[Step 7] Done.
+[Step 8] Building hierarchical retrieval dataset...
+Loading triplets from  C2C/data/elasticsearch/triplet_dataset_hardneg.json
+Loaded 5342 triplets
+Using CodeBERT on device: cuda
+Loading per-repo FAISS indices from  C2C/data/elasticsearch/faiss_index_codebert_hardneg
+  Loaded elasticsearch: 16872 vectors, 691 positive mappings
+Loaded indices for 1 repos
+
+Issue-level split (no data leakage):
+  Unique issues: 326 total → 260 train / 33 val / 33 test
+  Train:  260 issues,  3592 triplets,   1 repos
+  Val  :   33 issues,  1278 triplets,   1 repos
+  Test :   33 issues,   472 triplets,   1 repos
+  Deduplicated train: 3592 → 544 triplets (aggregated buggy lines/functions)
+
+  Retrieval Hit@K for train (n=544):
+    Hit@3  : 533/544 = 97.98%
+    Hit@5  : 541/544 = 99.45%
+    Hit@10 : 542/544 = 99.63%
+    Hit@20 : 542/544 = 99.63%
+    Hit@50 : 542/544 = 99.63%
+
+  Top-10 retrieval hit rate for train: 542/544 = 99.63%
+  Fallback insertions (correct not retrieved): 46/544 = 8.46%
+  Saved train dataset with 544 entries
+  train filter -> kept 544 / 544  (removed 0) ->  C2C/data/elasticsearch/hierarchical_dataset/train_filtered.json
+  Deduplicated val: 1278 → 76 triplets (aggregated buggy lines/functions)
+
+  Retrieval Hit@K for val (n=76):
+    Hit@3  : 31/76 = 40.79%
+    Hit@5  : 31/76 = 40.79%
+    Hit@10 : 38/76 = 50.00%
+    Hit@20 : 38/76 = 50.00%
+    Hit@50 : 38/76 = 50.00%
+
+  Top-10 retrieval hit rate for val: 38/76 = 50.00%
+  Fallback insertions (correct not retrieved): 55/76 = 72.37%
+  Saved val dataset with 76 entries
+  val filter -> kept 76 / 76  (removed 0) ->  C2C/data/elasticsearch/hierarchical_dataset/val_filtered.json
+  Deduplicated test: 472 → 71 triplets (aggregated buggy lines/functions)
+
+  Retrieval Hit@K for test (n=71):
+    Hit@3  : 13/71 = 18.31%
+    Hit@5  : 18/71 = 25.35%
+    Hit@10 : 35/71 = 49.30%
+    Hit@20 : 35/71 = 49.30%
+    Hit@50 : 35/71 = 49.30%
+
+  Top-10 retrieval hit rate for test: 35/71 = 49.30%
+  Fallback insertions (correct not retrieved): 52/71 = 73.24%
+  Saved test dataset with 71 entries
+  test filter -> kept 71 / 71  (removed 0) ->  C2C/data/elasticsearch/hierarchical_dataset/test_filtered.json
+
+Split statistics saved to  C2C/data/elasticsearch/hierarchical_dataset/split_statistics.json
+[Step 8] Done.
+[Step 9] Evaluating retrieval performance...
+
+--- Building base CodeBERT FAISS index ---
+Loading triplets from:  C2C/data/elasticsearch/triplet_dataset.json
+Loaded 5342 triplets
+Using base CodeBERT (no fine-tuning)
+Using CodeBERT on device: cuda
+Reusing file contents from:  C2C/data/elasticsearch/faiss_index_codebert
+Found 1 repos in triplets: ['elasticsearch']
+
+Processing elasticsearch (from cache)...
+  Re-embedding 16872 cached files for elasticsearch...
+  elasticsearch: 16872 vectors (from cache, 691 positive mappings)
+  Saved to  C2C/data/elasticsearch/faiss_index_codebert_base/elasticsearch
+
+Indexing complete. Total vectors across all repos: 16872
+Output saved to:  C2C/data/elasticsearch/faiss_index_codebert_base
+
+=== Base CodeBERT (no fine-tuning) ===
+Loading triplets from  C2C/data/elasticsearch/triplet_dataset.json
+Loaded 5342 triplets
+Filtered to 472 test-only triplets (from 5342)
+Loading per-repo indices from  C2C/data/elasticsearch/faiss_index_codebert_base
+Loaded 1 repo indices
+Using base CodeBERT (no fine-tuning)
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 472 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.0000      0.0000      0.0000
+    5      0.0000      0.0000      0.0000
+   10      0.0000      0.0000      0.0000
+   20      0.0000      0.0000      0.0000
+   50      0.0000      0.0000      0.0000
+
+MRR@50 (issue-level): 0.0000
+Not found in top-50: 472/472 (100.00%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:    0
+        rank 1:    0
+        rank 2:    0
+      rank 3-4:    0
+      rank 5-9:    0
+    rank 10-19:    0
+    rank 20-49:    0
+
+Results saved to  C2C/data/elasticsearch/faiss_index_codebert_base/eval_retrieval_results_test.json
+
+=== Initial model (random negatives) ===
+--- test split ---
+Loading triplets from  C2C/data/elasticsearch/triplet_dataset.json
+Loaded 5342 triplets
+Filtered to 472 test-only triplets (from 5342)
+Loading per-repo indices from  C2C/data/elasticsearch/faiss_index_codebert
+Loaded 1 repo indices
+Loading fine-tuned weights from:  C2C/outputs/checkpoints/contrastive/elasticsearch/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 472 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.2394      0.1515      0.2196
+    5      0.4195      0.2121      0.2647
+   10      0.5593      0.3333      0.2864
+   20      0.5657      0.3636      0.2869
+   50      0.7521      0.5758      0.2931
+
+MRR@50 (issue-level): 0.2931
+Not found in top-50: 117/472 (24.79%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:   99  ########
+        rank 1:    0
+        rank 2:   14  #
+      rank 3-4:   85  #######
+      rank 5-9:   66  #####
+    rank 10-19:    3
+    rank 20-49:   88  #######
+
+Results saved to  C2C/data/elasticsearch/faiss_index_codebert/eval_retrieval_results_test.json
+--- val split ---
+Loading triplets from  C2C/data/elasticsearch/triplet_dataset.json
+Loaded 5342 triplets
+Filtered to 1278 val-only triplets (from 5342)
+Loading per-repo indices from  C2C/data/elasticsearch/faiss_index_codebert
+Loaded 1 repo indices
+Loading fine-tuned weights from:  C2C/outputs/checkpoints/contrastive/elasticsearch/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 1278 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.4797      0.1818      0.4692
+    5      0.4820      0.2424      0.4698
+   10      0.8592      0.3939      0.5095
+   20      0.8897      0.4848      0.5116
+   50      0.9124      0.5152      0.5125
+
+MRR@50 (issue-level): 0.5125
+Not found in top-50: 112/1278 (8.76%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:  593  ##################
+        rank 1:    0
+        rank 2:   20
+      rank 3-4:    3
+      rank 5-9:  482  ###############
+    rank 10-19:   39  #
+    rank 20-49:   29
+
+Results saved to  C2C/data/elasticsearch/faiss_index_codebert/eval_retrieval_results_val.json
+--- train split ---
+Loading triplets from  C2C/data/elasticsearch/triplet_dataset.json
+Loaded 5342 triplets
+Filtered to 3592 train-only triplets (from 5342)
+Loading per-repo indices from  C2C/data/elasticsearch/faiss_index_codebert
+Loaded 1 repo indices
+Loading fine-tuned weights from:  C2C/outputs/checkpoints/contrastive/elasticsearch/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 3592 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.9396      0.6962      0.8142
+    5      0.9607      0.7577      0.8193
+   10      0.9780      0.8346      0.8219
+   20      0.9878      0.8769      0.8227
+   50      0.9925      0.9192      0.8228
+
+MRR@50 (issue-level): 0.8228
+Not found in top-50: 27/3592 (0.75%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0: 2577  ############################
+        rank 1:  490  #####
+        rank 2:  308  ###
+      rank 3-4:   76
+      rank 5-9:   62
+    rank 10-19:   35
+    rank 20-49:   17
+
+Results saved to  C2C/data/elasticsearch/faiss_index_codebert/eval_retrieval_results_train.json
+
+=== Hard-negative model ===
+--- test split ---
+Loading triplets from  C2C/data/elasticsearch/triplet_dataset_hardneg.json
+Loaded 5342 triplets
+Filtered to 472 test-only triplets (from 5342)
+Loading per-repo indices from  C2C/data/elasticsearch/faiss_index_codebert_hardneg
+Loaded 1 repo indices
+Loading fine-tuned weights from:  C2C/outputs/checkpoints/contrastive/elasticsearch/hardneg/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 472 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.2966      0.1515      0.2532
+    5      0.4153      0.2121      0.2771
+   10      0.5784      0.3636      0.2997
+   20      0.6123      0.3939      0.3023
+   50      0.7288      0.5152      0.3063
+
+MRR@50 (issue-level): 0.3063
+Not found in top-50: 128/472 (27.12%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:  100  ########
+        rank 1:   37  ###
+        rank 2:    3
+      rank 3-4:   56  ####
+      rank 5-9:   77  ######
+    rank 10-19:   16  #
+    rank 20-49:   55  ####
+
+Results saved to  C2C/data/elasticsearch/faiss_index_codebert_hardneg/eval_retrieval_results_test.json
+--- val split ---
+Loading triplets from  C2C/data/elasticsearch/triplet_dataset_hardneg.json
+Loaded 5342 triplets
+Filtered to 1278 val-only triplets (from 5342)
+Loading per-repo indices from  C2C/data/elasticsearch/faiss_index_codebert_hardneg
+Loaded 1 repo indices
+Loading fine-tuned weights from:  C2C/outputs/checkpoints/contrastive/elasticsearch/hardneg/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 1278 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.8153      0.3030      0.5116
+    5      0.8153      0.3030      0.5116
+   10      0.8607      0.4242      0.5189
+   20      0.8701      0.4545      0.5196
+   50      0.8756      0.5152      0.5197
+
+MRR@50 (issue-level): 0.5197
+Not found in top-50: 159/1278 (12.44%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0:  288  #########
+        rank 1:  687  #####################
+        rank 2:   67  ##
+      rank 3-4:    0
+      rank 5-9:   58  #
+    rank 10-19:   12
+    rank 20-49:    7
+
+Results saved to  C2C/data/elasticsearch/faiss_index_codebert_hardneg/eval_retrieval_results_val.json
+--- train split ---
+Loading triplets from  C2C/data/elasticsearch/triplet_dataset_hardneg.json
+Loaded 5342 triplets
+Filtered to 3592 train-only triplets (from 5342)
+Loading per-repo indices from  C2C/data/elasticsearch/faiss_index_codebert_hardneg
+Loaded 1 repo indices
+Loading fine-tuned weights from:  C2C/outputs/checkpoints/contrastive/elasticsearch/hardneg/best_codebert_triplet.pt
+Using device: cuda
+
+Skipped 0 triplets (repo not in index)
+Evaluated 3592 triplets
+
+    K       Hit@K    Recall@K       MRR@K
+--------------------------------------------
+    3      0.9953      0.9615      0.9476
+    5      0.9992      0.9885      0.9486
+   10      0.9994      0.9923      0.9486
+   20      1.0000      1.0000      0.9487
+   50      1.0000      1.0000      0.9487
+
+MRR@50 (issue-level): 0.9487
+Not found in top-50: 0/3592 (0.00%)
+
+Rank histogram (first correct file position, 0-indexed):
+        rank 0: 3264  ####################################
+        rank 1:  217  ##
+        rank 2:   94  #
+      rank 3-4:   14
+      rank 5-9:    1
+    rank 10-19:    2
+    rank 20-49:    0
+
+Results saved to  C2C/data/elasticsearch/faiss_index_codebert_hardneg/eval_retrieval_results_train.json
+[Step 9] Done.
+==========================================
+Elasticsearch preprocessing pipeline complete.
+Finished: Mon Mar 23 20:46:36 EDT 2026
+==========================================

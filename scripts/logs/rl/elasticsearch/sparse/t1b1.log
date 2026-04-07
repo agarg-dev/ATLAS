@@ -1,0 +1,1343 @@
+
+Random seed fixed to 42 for reproducibility
+Using device: cuda
+Training strategy: t1b1rl
+Training samples: 544
+Val samples: 76
+Initialized RankingBasedHRLTrainer with 544 training samples
+Reward type: sparse, Training strategy: t1b1rl
+Using T1B1-RL Strategy (Top-Down REINFORCE with Freezing)
+Training with T1B1-RL Strategy (Top-Down REINFORCE with Freezing)...
+Phase 1: Training File Agent (REINFORCE, file reward)
+T1B1-RL File Epoch 1: Loss = 3.8005
+  Phase 1 Epoch 1 wall time: 138s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 1 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.47368421052631576, 'file_mrr': 0.23837719298245616, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.47368421052631576, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 2: Loss = 4.8566
+  Phase 1 Epoch 2 wall time: 137s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 2 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5263157894736842, 'file_mrr': 0.25153508771929817, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5263157894736842, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 3: Loss = 5.0006
+  Phase 1 Epoch 3 wall time: 137s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+File Agent Epoch 3 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5263157894736842, 'file_mrr': 0.25087719298245603, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5263157894736842, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 4: Loss = 5.0228
+  Phase 1 Epoch 4 wall time: 137s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 4 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 5: Loss = 4.9314
+  Phase 1 Epoch 5 wall time: 137s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 5 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 6: Loss = 4.4936
+  Phase 1 Epoch 6 wall time: 137s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 6 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 7: Loss = 3.8046
+  Phase 1 Epoch 7 wall time: 137s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 7 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 8: Loss = 3.5408
+  Phase 1 Epoch 8 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 8 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 9: Loss = 3.6496
+  Phase 1 Epoch 9 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 9 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 10: Loss = 3.4760
+  Phase 1 Epoch 10 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 10 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 11: Loss = 3.4113
+  Phase 1 Epoch 11 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 11 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 12: Loss = 3.4459
+  Phase 1 Epoch 12 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 12 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 13: Loss = 3.4619
+  Phase 1 Epoch 13 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 13 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 14: Loss = 3.4309
+  Phase 1 Epoch 14 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 14 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 15: Loss = 3.4453
+  Phase 1 Epoch 15 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 15 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 16: Loss = 3.3464
+  Phase 1 Epoch 16 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 16 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 17: Loss = 3.3012
+  Phase 1 Epoch 17 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 17 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 18: Loss = 3.2349
+  Phase 1 Epoch 18 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 18 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 19: Loss = 3.2662
+  Phase 1 Epoch 19 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 19 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 20: Loss = 3.2285
+  Phase 1 Epoch 20 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 20 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 21: Loss = 3.1876
+  Phase 1 Epoch 21 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 21 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 22: Loss = 3.2509
+  Phase 1 Epoch 22 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 22 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 23: Loss = 3.2107
+  Phase 1 Epoch 23 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 23 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 24: Loss = 3.0386
+  Phase 1 Epoch 24 wall time: 137s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 24 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 25: Loss = 3.0655
+  Phase 1 Epoch 25 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 25 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 26: Loss = 3.1567
+  Phase 1 Epoch 26 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 26 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 27: Loss = 3.0536
+  Phase 1 Epoch 27 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 27 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 28: Loss = 3.1212
+  Phase 1 Epoch 28 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 28 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 29: Loss = 2.9206
+  Phase 1 Epoch 29 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 29 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 30: Loss = 2.9432
+  Phase 1 Epoch 30 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 30 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 31: Loss = 2.9114
+  Phase 1 Epoch 31 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 31 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 32: Loss = 2.8896
+  Phase 1 Epoch 32 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 32 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 33: Loss = 2.9107
+  Phase 1 Epoch 33 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 33 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 34: Loss = 2.9664
+  Phase 1 Epoch 34 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 34 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 35: Loss = 2.8298
+  Phase 1 Epoch 35 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 35 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 36: Loss = 2.7854
+  Phase 1 Epoch 36 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 36 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 37: Loss = 2.7665
+  Phase 1 Epoch 37 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 37 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 38: Loss = 2.7914
+  Phase 1 Epoch 38 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 38 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 39: Loss = 2.6945
+  Phase 1 Epoch 39 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 39 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL File Epoch 40: Loss = 2.6430
+  Phase 1 Epoch 40 wall time: 136s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+File Agent Epoch 40 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.05263157894736842, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.10526315789473684, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.5616666666666668, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.23684210526315788, 'oracle_func_top5': 0.6842105263157895, 'oracle_func_mrr': 0.42562335325493206, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.18181818181818182, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Restored best file agent from /C2C/outputs/checkpoints/rl/elasticsearch/file_agent_t1b1rl_sparse_seed42_best_file.pt (file_top1=0.1316)
+File agent frozen
+Phase 2: Training Function Agent (REINFORCE, frozen file agent)
+  Exploration reset: epsilon=0.300, temperature=1.000
+T1B1-RL Func Epoch 1: Loss = 5.2449
+  Phase 2 Epoch 1 wall time: 178s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 1 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.06578947368421052, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.6583333333333334, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.2894736842105263, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.4793319618977514, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2727272727272727, 'oracle_func_top5_nonglobal': 0.6363636363636364, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 2: Loss = 5.5427
+  Phase 2 Epoch 2 wall time: 180s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 2 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.06578947368421052, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.65, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.05555555555555555, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.32894736842105265, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.49864433811802233, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.34545454545454546, 'oracle_func_top5_nonglobal': 0.6545454545454545, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 3: Loss = 5.7609
+  Phase 2 Epoch 3 wall time: 178s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 3 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.11842105263157894, 'func_mrr': 0.7, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.05555555555555555, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.35526315789473684, 'oracle_func_top5': 0.7631578947368421, 'oracle_func_mrr': 0.513937780056201, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.38181818181818183, 'oracle_func_top5_nonglobal': 0.6909090909090909, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 4: Loss = 5.8386
+  Phase 2 Epoch 4 wall time: 178s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 4 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7066666666666667, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.05555555555555555, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5306300789853422, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.4, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 5: Loss = 5.8036
+  Phase 2 Epoch 5 wall time: 178s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 5 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7076923076923076, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.05555555555555555, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5325546894625842, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.38181818181818183, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 6: Loss = 5.6412
+  Phase 2 Epoch 6 wall time: 178s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 6 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7083333333333333, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5294236100157154, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.36363636363636365, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 7: Loss = 5.5876
+  Phase 2 Epoch 7 wall time: 178s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 7 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7040909090909091, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3684210526315789, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.525914509467141, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.36363636363636365, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 8: Loss = 5.2989
+  Phase 2 Epoch 8 wall time: 178s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 8 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.06578947368421052, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6507575757575758, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.32894736842105265, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5081394847842217, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 9: Loss = 5.2080
+  Phase 2 Epoch 9 wall time: 179s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 9 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7083333333333333, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.34210526315789475, 'oracle_func_top5': 0.75, 'oracle_func_mrr': 0.5205875995349679, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2909090909090909, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 10: Loss = 5.0940
+  Phase 2 Epoch 10 wall time: 178s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 10 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.7166666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.35526315789473684, 'oracle_func_top5': 0.7631578947368421, 'oracle_func_mrr': 0.529527417027417, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2909090909090909, 'oracle_func_top5_nonglobal': 0.6727272727272727, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 11: Loss = 5.1049
+  Phase 2 Epoch 11 wall time: 179s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 11 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.06578947368421052, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6674242424242424, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7368421052631579, 'oracle_func_mrr': 0.5455732133363713, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2545454545454545, 'oracle_func_top5_nonglobal': 0.6363636363636364, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 12: Loss = 4.9475
+  Phase 2 Epoch 12 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 12 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.06578947368421052, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.11842105263157894, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6457575757575758, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.537636230728336, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2545454545454545, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 13: Loss = 4.9854
+  Phase 2 Epoch 13 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 13 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6966666666666665, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5415627136021874, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 14: Loss = 4.8782
+  Phase 2 Epoch 14 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 14 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6991666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5418796116164538, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 15: Loss = 4.8939
+  Phase 2 Epoch 15 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 15 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.11842105263157894, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6991666666666666, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.11842105263157894, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.39473684210526316, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.544303138382086, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 16: Loss = 4.7216
+  Phase 2 Epoch 16 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 16 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6976190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5376341494762548, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2545454545454545, 'oracle_func_top5_nonglobal': 0.6, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 17: Loss = 4.6299
+  Phase 2 Epoch 17 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 17 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6892857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.3815789473684211, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.537416932482722, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2545454545454545, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 18: Loss = 4.5358
+  Phase 2 Epoch 18 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 18 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6892857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.40789473684210525, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5514520202020203, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 19: Loss = 4.5746
+  Phase 2 Epoch 19 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 19 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6869047619047619, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5561199400015192, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2909090909090909, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 20: Loss = 4.5465
+  Phase 2 Epoch 20 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 20 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5649958228905599, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 21: Loss = 4.3535
+  Phase 2 Epoch 21 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 21 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5668133401686036, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 22: Loss = 4.3137
+  Phase 2 Epoch 22 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 22 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.40789473684210525, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.552709571130624, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.2909090909090909, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 23: Loss = 4.2496
+  Phase 2 Epoch 23 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 23 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5595234809050601, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 24: Loss = 4.1665
+  Phase 2 Epoch 24 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 24 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.40789473684210525, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5545892703787443, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 25: Loss = 4.1225
+  Phase 2 Epoch 25 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 25 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.40789473684210525, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5570172152408998, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 26: Loss = 4.0902
+  Phase 2 Epoch 26 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 26 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.563245855022171, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 27: Loss = 4.0206
+  Phase 2 Epoch 27 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 27 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.563245855022171, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 28: Loss = 3.8130
+  Phase 2 Epoch 28 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 28 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5626623376623378, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 29: Loss = 3.8610
+  Phase 2 Epoch 29 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 29 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5641134085213034, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 30: Loss = 3.9106
+  Phase 2 Epoch 30 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 30 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7236842105263158, 'oracle_func_mrr': 0.5709212936186621, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 31: Loss = 3.8290
+  Phase 2 Epoch 31 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 31 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5636748120300753, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 32: Loss = 3.6575
+  Phase 2 Epoch 32 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 32 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.40789473684210525, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5567825814536342, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.3090909090909091, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 33: Loss = 3.5897
+  Phase 2 Epoch 33 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 33 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6801190476190476, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5636748120300753, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 34: Loss = 3.6361
+  Phase 2 Epoch 34 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 34 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5658677944862156, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 35: Loss = 3.4719
+  Phase 2 Epoch 35 wall time: 176s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 35 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5658677944862156, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 36: Loss = 3.4820
+  Phase 2 Epoch 36 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 36 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5658677944862156, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 37: Loss = 3.3622
+  Phase 2 Epoch 37 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 37 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5658677944862156, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 38: Loss = 3.3407
+  Phase 2 Epoch 38 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 38 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5658677944862156, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 39: Loss = 3.2906
+  Phase 2 Epoch 39 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 39 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.42105263157894735, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5658677944862156, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Func Epoch 40: Loss = 3.1615
+  Phase 2 Epoch 40 wall time: 177s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Function Agent Epoch 40 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.0, 'line_mrr': 0.0, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.3317765567765568, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Restored best func agent from /C2C/outputs/checkpoints/rl/elasticsearch/function_agent_t1b1rl_sparse_seed42_best_oracle_func.pt (oracle_func=0.4342)
+Function agent frozen
+Phase 3: Training Line Agent (REINFORCE, frozen file + func agents)
+  Exploration reset: epsilon=0.300, temperature=1.000
+T1B1-RL Line Epoch 1: Loss = -1.4141
+  Phase 3 Epoch 1 wall time: 192s | Peak GPU: 4.8 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 1 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.07539682539682539, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.17307692307692307, 'oracle_line_top5': 0.6923076923076923, 'oracle_line_mrr': 0.3788787601287601, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 2: Loss = -0.8732
+  Phase 3 Epoch 2 wall time: 191s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 2 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.20833333333333334, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6153846153846154, 'oracle_line_mrr': 0.31962898212898216, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 3: Loss = -0.9026
+  Phase 3 Epoch 3 wall time: 191s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 3 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.14814814814814814, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3060599123099123, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 4: Loss = -0.9471
+  Phase 3 Epoch 4 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 4 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.039473684210526314, 'line_mrr': 0.1623931623931624, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5769230769230769, 'oracle_line_mrr': 0.32887619858773715, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 5: Loss = -0.6084
+  Phase 3 Epoch 5 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 5 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.06481481481481481, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.17307692307692307, 'oracle_line_top5': 0.6538461538461539, 'oracle_line_mrr': 0.3663609360724745, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 6: Loss = -0.5575
+  Phase 3 Epoch 6 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 6 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.08333333333333333, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.15384615384615385, 'oracle_line_top5': 0.5961538461538461, 'oracle_line_mrr': 0.3331515706515707, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 7: Loss = -0.4176
+  Phase 3 Epoch 7 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 7 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.07326007326007326, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.5769230769230769, 'oracle_line_mrr': 0.2974964672080057, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 8: Loss = -0.4221
+  Phase 3 Epoch 8 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 8 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.08333333333333333, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5769230769230769, 'oracle_line_mrr': 0.3282432844932845, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 9: Loss = -0.2665
+  Phase 3 Epoch 9 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_oracle_line, agents=['line']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 9 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.0, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.05411255411255411, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.19230769230769232, 'oracle_line_top5': 0.6730769230769231, 'oracle_line_mrr': 0.3756107140722525, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 10: Loss = -0.4303
+  Phase 3 Epoch 10 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 10 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.08333333333333333, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5769230769230769, 'oracle_line_mrr': 0.31703942425096265, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 11: Loss = -0.2530
+  Phase 3 Epoch 11 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 11 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.08333333333333333, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5576923076923077, 'oracle_line_mrr': 0.31668075514229366, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 12: Loss = -0.2379
+  Phase 3 Epoch 12 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 12 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.07777777777777778, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.17307692307692307, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3699006655737425, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 13: Loss = -0.0631
+  Phase 3 Epoch 13 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 13 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.013157894736842105, 'line_mrr': 0.08333333333333333, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5961538461538461, 'oracle_line_mrr': 0.3217784352399737, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 14: Loss = 0.1731
+  Phase 3 Epoch 14 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 14 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.196969696969697, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3409488481603866, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 15: Loss = -0.2134
+  Phase 3 Epoch 15 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 15 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.013157894736842105, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.13333333333333333, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5769230769230769, 'oracle_line_mrr': 0.32596938318092167, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 16: Loss = 0.0677
+  Phase 3 Epoch 16 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 16 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.10000000000000002, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.15384615384615385, 'oracle_line_top5': 0.6153846153846154, 'oracle_line_mrr': 0.3545241617357001, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 17: Loss = -0.2608
+  Phase 3 Epoch 17 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 17 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.10000000000000002, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.15384615384615385, 'oracle_line_top5': 0.6538461538461539, 'oracle_line_mrr': 0.3562869822485206, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 18: Loss = -0.0479
+  Phase 3 Epoch 18 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 18 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.19999999999999998, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.15384615384615385, 'oracle_line_top5': 0.6153846153846154, 'oracle_line_mrr': 0.35533787793403177, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 19: Loss = -0.0819
+  Phase 3 Epoch 19 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 19 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.13888888888888887, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.15384615384615385, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3581485288216057, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 20: Loss = -0.0072
+  Phase 3 Epoch 20 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 20 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.0, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.09523809523809523, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.0, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.0, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.15384615384615385, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3601483986099371, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 21: Loss = -0.0491
+  Phase 3 Epoch 21 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 21 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.02631578947368421, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.4444444444444444, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.02631578947368421, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.02631578947368421, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5961538461538461, 'oracle_line_mrr': 0.33666584483892176, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 22: Loss = 0.0379
+  Phase 3 Epoch 22 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 22 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.16666666666666666, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.5961538461538461, 'oracle_line_mrr': 0.3320741758241758, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 23: Loss = 0.0427
+  Phase 3 Epoch 23 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 23 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.11428571428571428, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.1346153846153846, 'oracle_line_top5': 0.5961538461538461, 'oracle_line_mrr': 0.3468940781440782, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 24: Loss = 0.1044
+  Phase 3 Epoch 24 wall time: 192s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 24 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.2222222222222222, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.5769230769230769, 'oracle_line_mrr': 0.32673229548229543, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 25: Loss = -0.0724
+  Phase 3 Epoch 25 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 25 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.2222222222222222, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.5961538461538461, 'oracle_line_mrr': 0.3260912698412698, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 26: Loss = 0.0649
+  Phase 3 Epoch 26 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 26 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.2222222222222222, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.5961538461538461, 'oracle_line_mrr': 0.3273733211233211, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 27: Loss = 0.0640
+  Phase 3 Epoch 27 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 27 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.3888888888888889, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.5961538461538461, 'oracle_line_mrr': 0.32951007326007326, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 28: Loss = 0.0211
+  Phase 3 Epoch 28 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 28 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.3888888888888889, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3296169108669108, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 29: Loss = 0.0080
+  Phase 3 Epoch 29 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 29 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.2222222222222222, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.330685286935287, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 30: Loss = 0.0574
+  Phase 3 Epoch 30 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 30 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.0, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.2222222222222222, 'hierarchical_accuracy_top_1': 0.0, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.33176961926961934, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 31: Loss = 0.0807
+  Phase 3 Epoch 31 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 31 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.3888888888888889, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.33316613941613943, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 32: Loss = -0.0751
+  Phase 3 Epoch 32 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 32 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.38095238095238093, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3338217338217339, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 33: Loss = -0.0175
+  Phase 3 Epoch 33 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 33 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.3888888888888889, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3325537710153095, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 34: Loss = -0.3119
+  Phase 3 Epoch 34 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 34 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.013157894736842105, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.3888888888888889, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.013157894736842105, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.013157894736842105, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3311801446416831, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 35: Loss = 0.0728
+  Phase 3 Epoch 35 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 35 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.02631578947368421, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.39999999999999997, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.02631578947368421, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.02631578947368421, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6538461538461539, 'oracle_line_mrr': 0.33182117028270874, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 36: Loss = -0.1617
+  Phase 3 Epoch 36 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 36 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.02631578947368421, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.39999999999999997, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.02631578947368421, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.02631578947368421, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3311801446416831, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 37: Loss = 0.1235
+  Phase 3 Epoch 37 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 37 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.02631578947368421, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.39999999999999997, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.02631578947368421, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.02631578947368421, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3311801446416831, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 38: Loss = -0.0026
+  Phase 3 Epoch 38 wall time: 194s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 38 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.02631578947368421, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.39999999999999997, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.02631578947368421, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.02631578947368421, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3315235512350897, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 39: Loss = -0.0776
+  Phase 3 Epoch 39 wall time: 193s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 39 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.02631578947368421, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.39999999999999997, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.02631578947368421, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.02631578947368421, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.3315235512350897, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+T1B1-RL Line Epoch 40: Loss = 0.0798
+  Phase 3 Epoch 40 wall time: 196s | Peak GPU: 4.9 GB
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Line Agent Epoch 40 Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.02631578947368421, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.39999999999999997, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.02631578947368421, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.02631578947368421, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.33344662815816667, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+Agents saved: tag=None, agents=all
+Agents saved: tag=best_oracle_func, agents=['func']
+Agents saved: tag=best_file, agents=['file']
+Final Evaluation Metrics: {'file_accuracy_top_1': 0.13157894736842105, 'file_accuracy_top_5': 0.5394736842105263, 'file_mrr': 0.2535087719298245, 'func_accuracy_top_1': 0.07894736842105263, 'func_accuracy_top_5': 0.10526315789473684, 'func_accuracy_top_10': 0.13157894736842105, 'func_accuracy_top_15': 0.13157894736842105, 'func_mrr': 0.6967857142857143, 'line_accuracy_top_1': 0.013157894736842105, 'line_accuracy_top_5': 0.02631578947368421, 'line_accuracy_top_10': 0.02631578947368421, 'line_accuracy_top_15': 0.02631578947368421, 'line_mrr': 0.39999999999999997, 'hierarchical_accuracy_top_1': 0.013157894736842105, 'hierarchical_accuracy_top_5': 0.02631578947368421, 'issue_file_coverage': 0.5394736842105263, 'issue_func_coverage': 0.10526315789473684, 'issue_line_coverage': 0.02631578947368421, 'total_samples': 76, 'oracle_func_top1': 0.4342105263157895, 'oracle_func_top5': 0.7105263157894737, 'oracle_func_mrr': 0.5724467418546367, 'oracle_line_top1': 0.11538461538461539, 'oracle_line_top5': 0.6346153846153846, 'oracle_line_mrr': 0.33344662815816667, 'oracle_func_n': 76, 'oracle_line_n': 52, 'oracle_func_top1_nonglobal': 0.32727272727272727, 'oracle_func_top5_nonglobal': 0.6181818181818182, 'oracle_func_n_nonglobal': 55}
+==========================================
+Training finished: Fri Mar 27 14:02:26 EDT 2026
+Running evaluation on test set...
+==========================================
+--- Evaluating FINAL checkpoint ---
+Loaded 71 test samples
+Loaded agents from: /C2C/outputs/checkpoints/rl/elasticsearch/file_agent_t1b1rl_sparse_seed42.pt, /C2C/outputs/checkpoints/rl/elasticsearch/function_agent_t1b1rl_sparse_seed42.pt, /C2C/outputs/checkpoints/rl/elasticsearch/line_agent_t1b1rl_sparse_seed42.pt
+Agents loaded successfully
+============================================================
+RUNNING ALL EVALUATIONS
+============================================================
+
+1. Running E2E cascade evaluation...
+Starting E2E cascade evaluation...
+
+2. Running LLMAO baseline evaluation (ground truth files)...
+Starting evaluation with ground truth files (LLMAO baseline comparison)...
+Processing sample 1/71: 103569
+Processing sample 2/71: 103011
+Processing sample 3/71: 102121
+Processing sample 4/71: 101958
+Processing sample 5/71: 101958
+Processing sample 6/71: 101958
+Processing sample 7/71: 101477
+Processing sample 8/71: 101477
+Processing sample 9/71: 101144
+Processing sample 10/71: 100460
+Processing sample 11/71: 100434
+Processing sample 12/71: 100109
+Processing sample 13/71: 100109
+Processing sample 14/71: 99696
+Processing sample 15/71: 99696
+Processing sample 16/71: 99696
+Processing sample 17/71: 99696
+Processing sample 18/71: 99696
+Processing sample 19/71: 98695
+Processing sample 20/71: 98695
+Processing sample 21/71: 98695
+Processing sample 22/71: 98695
+Processing sample 23/71: 98611
+Processing sample 24/71: 98611
+Processing sample 25/71: 98606
+Processing sample 26/71: 97638
+Processing sample 27/71: 97638
+Processing sample 28/71: 97320
+Processing sample 29/71: 97320
+Processing sample 30/71: 97311
+Processing sample 31/71: 97311
+Processing sample 32/71: 95786
+Processing sample 33/71: 95786
+Processing sample 34/71: 95786
+Processing sample 35/71: 95670
+Processing sample 36/71: 95561
+Processing sample 37/71: 95561
+Processing sample 38/71: 95352
+Processing sample 39/71: 95334
+Processing sample 40/71: 94672
+Processing sample 41/71: 94096
+Processing sample 42/71: 94085
+Processing sample 43/71: 94085
+Processing sample 44/71: 94067
+Processing sample 45/71: 93989
+Processing sample 46/71: 93989
+Processing sample 47/71: 93989
+Processing sample 48/71: 93989
+Processing sample 49/71: 93989
+Processing sample 50/71: 93989
+Processing sample 51/71: 93989
+Processing sample 52/71: 93989
+Processing sample 53/71: 93989
+Processing sample 54/71: 93989
+Processing sample 55/71: 93966
+Processing sample 56/71: 93966
+Processing sample 57/71: 93966
+Processing sample 58/71: 93824
+Processing sample 59/71: 93824
+Processing sample 60/71: 93824
+Processing sample 61/71: 93824
+Processing sample 62/71: 93824
+Processing sample 63/71: 93440
+Processing sample 64/71: 93440
+Processing sample 65/71: 93005
+Processing sample 66/71: 93005
+Processing sample 67/71: 92898
+Processing sample 68/71: 92898
+Processing sample 69/71: 92562
+Processing sample 70/71: 92562
+Processing sample 71/71: 92243
+
+3. Running oracle per-level evaluation...
+Starting issue-based evaluation...
+Processing sample 1/71: 103569
+Processing sample 2/71: 103011
+Processing sample 3/71: 102121
+Processing sample 4/71: 101958
+Processing sample 5/71: 101958
+Processing sample 6/71: 101958
+Processing sample 7/71: 101477
+Processing sample 8/71: 101477
+Processing sample 9/71: 101144
+Processing sample 10/71: 100460
+Processing sample 11/71: 100434
+Processing sample 12/71: 100109
+Processing sample 13/71: 100109
+Processing sample 14/71: 99696
+Processing sample 15/71: 99696
+Processing sample 16/71: 99696
+Processing sample 17/71: 99696
+Processing sample 18/71: 99696
+Processing sample 19/71: 98695
+Processing sample 20/71: 98695
+Processing sample 21/71: 98695
+Processing sample 22/71: 98695
+Processing sample 23/71: 98611
+Processing sample 24/71: 98611
+Processing sample 25/71: 98606
+Processing sample 26/71: 97638
+Processing sample 27/71: 97638
+Processing sample 28/71: 97320
+Processing sample 29/71: 97320
+Processing sample 30/71: 97311
+Processing sample 31/71: 97311
+Processing sample 32/71: 95786
+Processing sample 33/71: 95786
+Processing sample 34/71: 95786
+Processing sample 35/71: 95670
+Processing sample 36/71: 95561
+Processing sample 37/71: 95561
+Processing sample 38/71: 95352
+Processing sample 39/71: 95334
+Processing sample 40/71: 94672
+Processing sample 41/71: 94096
+Processing sample 42/71: 94085
+Processing sample 43/71: 94085
+Processing sample 44/71: 94067
+Processing sample 45/71: 93989
+Processing sample 46/71: 93989
+Processing sample 47/71: 93989
+Processing sample 48/71: 93989
+Processing sample 49/71: 93989
+Processing sample 50/71: 93989
+Processing sample 51/71: 93989
+Processing sample 52/71: 93989
+Processing sample 53/71: 93989
+Processing sample 54/71: 93989
+Processing sample 55/71: 93966
+Processing sample 56/71: 93966
+Processing sample 57/71: 93966
+Processing sample 58/71: 93824
+Processing sample 59/71: 93824
+Processing sample 60/71: 93824
+Processing sample 61/71: 93824
+Processing sample 62/71: 93824
+Processing sample 63/71: 93440
+Processing sample 64/71: 93440
+Processing sample 65/71: 93005
+Processing sample 66/71: 93005
+Processing sample 67/71: 92898
+Processing sample 68/71: 92898
+Processing sample 69/71: 92562
+Processing sample 70/71: 92562
+Processing sample 71/71: 92243
+
+Inference timing (ms/bug): mean=464.8, p50=409.0, p95=1122.7
+
+4. Running multi-line evaluation...
+Starting multi-line evaluation...
+
+Multi-line evaluation results:
+  Multi-file recall: 0.5429 (33 issues)
+  Multi-line recall: 0.1000 (33 issues)
+
+E2E CASCADE EVALUATION RESULTS
+============================================================
+
+File Level Metrics:
+  Hit@1:  0.3662
+  Hit@5:  0.8028
+  Hit@10: 0.8028
+  MRR:     0.5225
+
+Function Level Metrics:
+  Hit@1:  0.5070
+  Hit@5:  0.6479
+  Hit@10: 0.7042
+  Hit@15: 0.7465
+  MRR:     0.5798
+
+Line Level Metrics:
+  Hit@1:  0.2500
+  Hit@5:  0.3750
+  Hit@10: 0.3750
+  Hit@15: 0.3750
+  MRR:     0.2917
+
+Evaluation Statistics:
+  Total samples: 71
+  File evaluations: 71
+  Function evaluations: 71
+  Line evaluations: 8
+
+Note: E2E cascade: file agent predicts → func agent gets top-1 predicted file → line agent gets top-1 predicted function
+
+LLMAO BASELINE EVALUATION RESULTS
+============================================================
+
+Function Level Metrics:
+  Hit@1:  0.4930
+  Hit@5:  0.8028
+  Hit@10: 0.9296
+  Hit@15: 0.9577
+  MRR:     0.6382
+
+Line Level Metrics:
+  Hit@1:  0.2308
+  Hit@5:  0.3846
+  Hit@10: 0.4615
+  Hit@15: 0.6154
+  MRR:     0.3027
+
+Evaluation Statistics:
+  Total samples: 71
+  Function evaluations: 71
+  Line evaluations: 13
+
+Note: Evaluation using ground truth files (LLMAO baseline comparison)
+
+ORACLE PER-LEVEL EVALUATION RESULTS
+============================================================
+
+File Level Metrics:
+  Hit@1:  0.3662
+  Hit@5:  0.8028
+  Hit@10: 0.8028
+  MRR:     0.5225
+
+Function Level Metrics:
+  Hit@1:  0.5545
+  Hit@5:  0.7500
+  Hit@10: 0.8182
+  Hit@15: 0.8318
+  MRR:     0.6398
+
+Line Level Metrics:
+  Hit@1:  0.1886
+  Hit@5:  0.5556
+  Hit@10: 0.6734
+  Hit@15: 0.7576
+  MRR:     0.3459
+
+Evaluation Statistics:
+  Total samples: 71
+  File evaluations: 71
+  Function evaluations: 220
+  Line evaluations: 297
+
+============================================================
+E2E vs LLMAO COMPARISON (paper Table 3)
+============================================================
+
+Function Level:
+  E2E   Hit@1: 0.5070
+  LLMAO Hit@1: 0.4930
+
+Line Level:
+  E2E   MRR:   0.2917
+  LLMAO MRR:   0.3027
+  E2E   Hit@5: 0.3750
+  LLMAO Hit@5: 0.3846
+
+Combined results saved to: combined_evaluation_results.json
+==========================================
+Final checkpoint eval done: Fri Mar 27 14:03:55 EDT 2026
+Running evaluation on BEST checkpoint...
+==========================================
+--- Evaluating BEST checkpoint ---
+Loaded 71 test samples
+Loaded agents from: /C2C/outputs/checkpoints/rl/elasticsearch/file_agent_t1b1rl_sparse_seed42_best_file.pt, /C2C/outputs/checkpoints/rl/elasticsearch/function_agent_t1b1rl_sparse_seed42_best_oracle_func.pt, /C2C/outputs/checkpoints/rl/elasticsearch/line_agent_t1b1rl_sparse_seed42_best_oracle_line.pt
+Agents loaded successfully
+============================================================
+RUNNING ALL EVALUATIONS
+============================================================
+
+1. Running E2E cascade evaluation...
+Starting E2E cascade evaluation...
+
+2. Running LLMAO baseline evaluation (ground truth files)...
+Starting evaluation with ground truth files (LLMAO baseline comparison)...
+Processing sample 1/71: 103569
+Processing sample 2/71: 103011
+Processing sample 3/71: 102121
+Processing sample 4/71: 101958
+Processing sample 5/71: 101958
+Processing sample 6/71: 101958
+Processing sample 7/71: 101477
+Processing sample 8/71: 101477
+Processing sample 9/71: 101144
+Processing sample 10/71: 100460
+Processing sample 11/71: 100434
+Processing sample 12/71: 100109
+Processing sample 13/71: 100109
+Processing sample 14/71: 99696
+Processing sample 15/71: 99696
+Processing sample 16/71: 99696
+Processing sample 17/71: 99696
+Processing sample 18/71: 99696
+Processing sample 19/71: 98695
+Processing sample 20/71: 98695
+Processing sample 21/71: 98695
+Processing sample 22/71: 98695
+Processing sample 23/71: 98611
+Processing sample 24/71: 98611
+Processing sample 25/71: 98606
+Processing sample 26/71: 97638
+Processing sample 27/71: 97638
+Processing sample 28/71: 97320
+Processing sample 29/71: 97320
+Processing sample 30/71: 97311
+Processing sample 31/71: 97311
+Processing sample 32/71: 95786
+Processing sample 33/71: 95786
+Processing sample 34/71: 95786
+Processing sample 35/71: 95670
+Processing sample 36/71: 95561
+Processing sample 37/71: 95561
+Processing sample 38/71: 95352
+Processing sample 39/71: 95334
+Processing sample 40/71: 94672
+Processing sample 41/71: 94096
+Processing sample 42/71: 94085
+Processing sample 43/71: 94085
+Processing sample 44/71: 94067
+Processing sample 45/71: 93989
+Processing sample 46/71: 93989
+Processing sample 47/71: 93989
+Processing sample 48/71: 93989
+Processing sample 49/71: 93989
+Processing sample 50/71: 93989
+Processing sample 51/71: 93989
+Processing sample 52/71: 93989
+Processing sample 53/71: 93989
+Processing sample 54/71: 93989
+Processing sample 55/71: 93966
+Processing sample 56/71: 93966
+Processing sample 57/71: 93966
+Processing sample 58/71: 93824
+Processing sample 59/71: 93824
+Processing sample 60/71: 93824
+Processing sample 61/71: 93824
+Processing sample 62/71: 93824
+Processing sample 63/71: 93440
+Processing sample 64/71: 93440
+Processing sample 65/71: 93005
+Processing sample 66/71: 93005
+Processing sample 67/71: 92898
+Processing sample 68/71: 92898
+Processing sample 69/71: 92562
+Processing sample 70/71: 92562
+Processing sample 71/71: 92243
+
+3. Running oracle per-level evaluation...
+Starting issue-based evaluation...
+Processing sample 1/71: 103569
+Processing sample 2/71: 103011
+Processing sample 3/71: 102121
+Processing sample 4/71: 101958
+Processing sample 5/71: 101958
+Processing sample 6/71: 101958
+Processing sample 7/71: 101477
+Processing sample 8/71: 101477
+Processing sample 9/71: 101144
+Processing sample 10/71: 100460
+Processing sample 11/71: 100434
+Processing sample 12/71: 100109
+Processing sample 13/71: 100109
+Processing sample 14/71: 99696
+Processing sample 15/71: 99696
+Processing sample 16/71: 99696
+Processing sample 17/71: 99696
+Processing sample 18/71: 99696
+Processing sample 19/71: 98695
+Processing sample 20/71: 98695
+Processing sample 21/71: 98695
+Processing sample 22/71: 98695
+Processing sample 23/71: 98611
+Processing sample 24/71: 98611
+Processing sample 25/71: 98606
+Processing sample 26/71: 97638
+Processing sample 27/71: 97638
+Processing sample 28/71: 97320
+Processing sample 29/71: 97320
+Processing sample 30/71: 97311
+Processing sample 31/71: 97311
+Processing sample 32/71: 95786
+Processing sample 33/71: 95786
+Processing sample 34/71: 95786
+Processing sample 35/71: 95670
+Processing sample 36/71: 95561
+Processing sample 37/71: 95561
+Processing sample 38/71: 95352
+Processing sample 39/71: 95334
+Processing sample 40/71: 94672
+Processing sample 41/71: 94096
+Processing sample 42/71: 94085
+Processing sample 43/71: 94085
+Processing sample 44/71: 94067
+Processing sample 45/71: 93989
+Processing sample 46/71: 93989
+Processing sample 47/71: 93989
+Processing sample 48/71: 93989
+Processing sample 49/71: 93989
+Processing sample 50/71: 93989
+Processing sample 51/71: 93989
+Processing sample 52/71: 93989
+Processing sample 53/71: 93989
+Processing sample 54/71: 93989
+Processing sample 55/71: 93966
+Processing sample 56/71: 93966
+Processing sample 57/71: 93966
+Processing sample 58/71: 93824
+Processing sample 59/71: 93824
+Processing sample 60/71: 93824
+Processing sample 61/71: 93824
+Processing sample 62/71: 93824
+Processing sample 63/71: 93440
+Processing sample 64/71: 93440
+Processing sample 65/71: 93005
+Processing sample 66/71: 93005
+Processing sample 67/71: 92898
+Processing sample 68/71: 92898
+Processing sample 69/71: 92562
+Processing sample 70/71: 92562
+Processing sample 71/71: 92243
+
+Inference timing (ms/bug): mean=465.3, p50=411.2, p95=1121.5
+
+4. Running multi-line evaluation...
+Starting multi-line evaluation...
+
+Multi-line evaluation results:
+  Multi-file recall: 0.5429 (33 issues)
+  Multi-line recall: 0.1076 (33 issues)
+
+E2E CASCADE EVALUATION RESULTS
+============================================================
+
+File Level Metrics:
+  Hit@1:  0.3662
+  Hit@5:  0.8028
+  Hit@10: 0.8028
+  MRR:     0.5225
+
+Function Level Metrics:
+  Hit@1:  0.5070
+  Hit@5:  0.6479
+  Hit@10: 0.7042
+  Hit@15: 0.7465
+  MRR:     0.5798
+
+Line Level Metrics:
+  Hit@1:  0.1250
+  Hit@5:  0.3750
+  Hit@10: 0.5000
+  Hit@15: 0.5000
+  MRR:     0.2313
+
+Evaluation Statistics:
+  Total samples: 71
+  File evaluations: 71
+  Function evaluations: 71
+  Line evaluations: 8
+
+Note: E2E cascade: file agent predicts → func agent gets top-1 predicted file → line agent gets top-1 predicted function
+
+LLMAO BASELINE EVALUATION RESULTS
+============================================================
+
+Function Level Metrics:
+  Hit@1:  0.4930
+  Hit@5:  0.8028
+  Hit@10: 0.9296
+  Hit@15: 0.9577
+  MRR:     0.6382
+
+Line Level Metrics:
+  Hit@1:  0.2308
+  Hit@5:  0.3077
+  Hit@10: 0.3846
+  Hit@15: 0.5385
+  MRR:     0.2696
+
+Evaluation Statistics:
+  Total samples: 71
+  Function evaluations: 71
+  Line evaluations: 13
+
+Note: Evaluation using ground truth files (LLMAO baseline comparison)
+
+ORACLE PER-LEVEL EVALUATION RESULTS
+============================================================
+
+File Level Metrics:
+  Hit@1:  0.3662
+  Hit@5:  0.8028
+  Hit@10: 0.8028
+  MRR:     0.5225
+
+Function Level Metrics:
+  Hit@1:  0.5545
+  Hit@5:  0.7500
+  Hit@10: 0.8182
+  Hit@15: 0.8318
+  MRR:     0.6398
+
+Line Level Metrics:
+  Hit@1:  0.2155
+  Hit@5:  0.5455
+  Hit@10: 0.6599
+  Hit@15: 0.7542
+  MRR:     0.3505
+
+Evaluation Statistics:
+  Total samples: 71
+  File evaluations: 71
+  Function evaluations: 220
+  Line evaluations: 297
+
+============================================================
+E2E vs LLMAO COMPARISON (paper Table 3)
+============================================================
+
+Function Level:
+  E2E   Hit@1: 0.5070
+  LLMAO Hit@1: 0.4930
+
+Line Level:
+  E2E   MRR:   0.2313
+  LLMAO MRR:   0.2696
+  E2E   Hit@5: 0.3750
+  LLMAO Hit@5: 0.3077
+
+Combined results saved to: combined_evaluation_results.json
+==========================================
+Finished: Fri Mar 27 14:05:18 EDT 2026
+==========================================
