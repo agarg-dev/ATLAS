@@ -99,7 +99,7 @@ def process_fold(
                         ])
                         rows_written += 1
 
-    print(f"  {fold_dir.name} → {out_path.name}  ({rows_written} rows)")
+    print(f"  {fold_dir.name} -> {out_path.name}  ({rows_written} rows)")
     return rows_written
 
 

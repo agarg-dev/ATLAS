@@ -89,7 +89,7 @@ def combine_fold(
             f"({len(probs) - prob_idx} unused — padding tokens filtered by training)"
         )
 
-    print(f"  {filtered_csv.name} → {out_path.name}  ({rows_written} rows)")
+    print(f"  {filtered_csv.name} -> {out_path.name}  ({rows_written} rows)")
     return rows_written
 
 

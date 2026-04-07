@@ -85,7 +85,7 @@ def filter_fold(
                 writer.writerow(row)
                 rows_kept += 1
 
-    print(f"  {merged_csv.name} → {out_path.name}  ({rows_kept} rows kept)")
+    print(f"  {merged_csv.name} -> {out_path.name}  ({rows_kept} rows kept)")
     return rows_kept
 
 

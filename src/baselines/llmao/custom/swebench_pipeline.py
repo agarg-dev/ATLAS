@@ -324,6 +324,7 @@ def stage_preprocess(args: argparse.Namespace) -> None:
                 "global_buggy_lines": buggy_lines,
                 "chunks": file_csv_paths,
                 "full_source_lines": len(source.splitlines()),
+                "full_source": source,
             }
 
         if instance_meta["files"]:
@@ -523,7 +524,7 @@ def evaluate_instance(
     Paper protocol:
     1. Rank functions by their max-probability line.
     2. Within the top-ranked function, find the highest-probability line.
-    3. Report whether the top function / top line is within K of any buggy line.
+    3. Report whether the top-ranked function / top-K ranked lines contain a bug.
 
     Returns a dict with keys:
       ``func_hit`` (top-1 function hit), ``func_hit_{k}`` and ``line_hit_{k}``
@@ -532,8 +533,8 @@ def evaluate_instance(
       ``reciprocal_rank_func``, ``reciprocal_rank_line``.
 
     ``func_hit_k``: true if some ground-truth buggy function appears in the top-K
-    ranked functions. ``line_hit_k``: true if the argmax-probability line is within
-    K physical lines of any buggy line in the chunk.
+    ranked functions. ``line_hit_k``: true if some ground-truth buggy line appears
+    in the top-K ranked lines in the chunk.
     """
     func_ranges = get_python_function_ranges(source)
 
@@ -592,16 +593,19 @@ def evaluate_instance(
         result["reciprocal_rank_line"] = 0.0
         return result
 
-    top_line = int(max(range(len(per_line_probs)), key=lambda i: per_line_probs[i]))
+    sorted_lines = sorted(
+        range(len(per_line_probs)),
+        key=lambda i: per_line_probs[i],
+        reverse=True,
+    )
+    top_line = sorted_lines[0]
     result["top_line"] = top_line + chunk_start  # global coordinate
 
-    min_dist = min(abs(top_line - bl) for bl in local_buggy)
     for k in k_values:
-        result[f"line_hit_{k}"] = (min_dist <= k)
+        topk = sorted_lines[:k] if k > 0 else []
+        result[f"line_hit_{k}"] = any(li in local_buggy for li in topk)
 
     # Line MRR — rank of first buggy line in probability-sorted order
-    sorted_lines = sorted(range(len(per_line_probs)),
-                          key=lambda i: per_line_probs[i], reverse=True)
     rr_line = 0.0
     for rank, li in enumerate(sorted_lines, start=1):
         if li in local_buggy:
@@ -759,7 +763,7 @@ def run_paper_evaluation(
             print(f"  MRR (function)        : {mrr_func:.4f}")
             print()
             print(
-                "Line-level results (Hit@K = argmax line within K physical lines of a bug):"
+                "Line-level results (Hit@K = exact buggy line in top-K ranked lines):"
             )
             for k in k_values:
                 h = line_hits[k]
